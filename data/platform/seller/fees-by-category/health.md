@@ -1,0 +1,19 @@
+---
+title: Seller Fees: Health & Nutrition
+audience: seller
+type: fees
+last_updated: 2026-09-15
+category: Health & Nutrition
+---
+
+# Seller Fees: Health & Nutrition
+
+- **Referral fee**: 12% of the total sale price, minimum 5 EGP per item.
+- No change scheduled.
+- **Gated category**: Yes. Approval required before listing (see "Gated Categories").
+- **Minimum return window you must offer**: 14 days
+- Plus the per-item closing fee (10 EGP, Individual plan only), FBZ fees if applicable, and 14% VAT on all fees.
+
+## Example: 1,000 EGP sale
+- Before 2026-11-01: referral fee 120.00 EGP + VAT 16.80 EGP = 136.80 EGP
+- From 2026-11-01: referral fee 120.00 EGP + VAT 16.80 EGP = 136.80 EGP

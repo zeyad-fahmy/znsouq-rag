@@ -1,0 +1,3673 @@
+[
+ {
+  "seller_id": "S0000",
+  "store_name": "ZNSouq Retail",
+  "categories": [
+   "electronics",
+   "mobile-phones",
+   "computers",
+   "home-appliances",
+   "home-kitchen",
+   "fashion-men",
+   "fashion-women",
+   "kids-baby",
+   "beauty",
+   "health",
+   "sports",
+   "toys",
+   "books",
+   "grocery",
+   "automotive",
+   "pet-supplies"
+  ],
+  "governorate": "Cairo",
+  "joined": "2019-03-01",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Top Seller",
+  "rating": 4.7,
+  "rating_count": 184230,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "ZNSouq standard rules",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.3,
+   "late_shipment": 0.0,
+   "cancel": 0.4,
+   "valid_tracking": 100.0,
+   "response_24h": 99.0
+  },
+  "description": "ZNSouq Retail is ZNSouq's own store. All items are Fulfilled by ZNSouq."
+ },
+ {
+  "seller_id": "S0001",
+  "store_name": "Oasis Hub",
+  "categories": [
+   "beauty",
+   "home-appliances"
+  ],
+  "governorate": "Cairo",
+  "joined": "2025-07-12",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 19429,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.65,
+   "late_shipment": 0.0,
+   "cancel": 1.3,
+   "valid_tracking": 100.0,
+   "response_24h": 99.5
+  },
+  "new_seller": false,
+  "description": "Oasis Hub has served customers in Cairo since 2025. We focus on skincare, makeup, perfume, hair dryers, shavers at fair prices."
+ },
+ {
+  "seller_id": "S0002",
+  "store_name": "Crescent House",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2021-02-26",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.7,
+  "rating_count": 12523,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.83,
+   "late_shipment": 0.0,
+   "cancel": 0.9,
+   "valid_tracking": 100.0,
+   "response_24h": 95.2
+  },
+  "new_seller": false,
+  "description": "Crescent House has served customers in Alexandria since 2021. We focus on LEGO-style building sets, dolls, board games, RC cars at fair prices."
+ },
+ {
+  "seller_id": "S0003",
+  "store_name": "Falcon Shop",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Cairo",
+  "joined": "2020-03-11",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 11761,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.76,
+   "late_shipment": 0.0,
+   "cancel": 0.7,
+   "valid_tracking": 100.0,
+   "response_24h": 99.6
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading women's fashion brands in Egypt. We sell dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0004",
+  "store_name": "Horus Cosmetics",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Cairo",
+  "joined": "2021-05-01",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.1,
+  "rating_count": 16478,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 45,
+   "C": 65,
+   "D": 90
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.67,
+   "late_shipment": 2.3,
+   "cancel": 0.1,
+   "valid_tracking": 100,
+   "response_24h": 97.6
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading beauty & personal care brands in Egypt. We sell skincare, makeup, perfume, hair dryers, shavers."
+ },
+ {
+  "seller_id": "S0005",
+  "store_name": "Sun Trading",
+  "categories": [
+   "mobile-phones",
+   "sports"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2024-03-20",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 11266,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "mobile-phones": 30,
+   "sports": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 60,
+   "C": 80,
+   "D": 130
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.96,
+   "late_shipment": 4.7,
+   "cancel": 0.6,
+   "valid_tracking": 100,
+   "response_24h": 94.5
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading mobile phones & tablets brands in Egypt. We sell smartphones, tablets, chargers, phone cases."
+ },
+ {
+  "seller_id": "S0006",
+  "store_name": "Sphinx Center",
+  "categories": [
+   "automotive"
+  ],
+  "governorate": "Cairo",
+  "joined": "2025-02-08",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 16044,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "automotive": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 60,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.14,
+   "late_shipment": 3.8,
+   "cancel": 0.1,
+   "valid_tracking": 97.8,
+   "response_24h": 95.3
+  },
+  "new_seller": false,
+  "description": "Sphinx Center is a automotive store based in Cairo, selling car accessories, tires, dash cams, car care."
+ },
+ {
+  "seller_id": "S0007",
+  "store_name": "Sun Store",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-03-20",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 20799,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "mobile-phones": 45
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 65,
+   "D": 110
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.44,
+   "late_shipment": 2.1,
+   "cancel": 1.0,
+   "valid_tracking": 95.7,
+   "response_24h": 92.2
+  },
+  "new_seller": false,
+  "description": "Sun Store is a mobile phones & tablets store based in Cairo, selling smartphones, tablets, chargers, phone cases."
+ },
+ {
+  "seller_id": "S0008",
+  "store_name": "Sun Hub",
+  "categories": [
+   "fashion-women",
+   "fashion-men"
+  ],
+  "governorate": "Cairo",
+  "joined": "2025-10-25",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 6132,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "fashion-men": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 45,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.67,
+   "late_shipment": 1.4,
+   "cancel": 0.5,
+   "valid_tracking": 98.9,
+   "response_24h": 95.7
+  },
+  "new_seller": false,
+  "description": "Sun Hub has served customers in Cairo since 2025. We focus on dresses, abayas, shoes, handbags, jewelry at fair prices."
+ },
+ {
+  "seller_id": "S0009",
+  "store_name": "Alex Play",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Giza",
+  "joined": "2025-06-23",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.9,
+  "rating_count": 24057,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 65,
+   "D": 140
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.25,
+   "late_shipment": 3.3,
+   "cancel": 0.9,
+   "valid_tracking": 100,
+   "response_24h": 90.9
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading toys & games brands in Egypt. We sell LEGO-style building sets, dolls, board games, RC cars."
+ },
+ {
+  "seller_id": "S0010",
+  "store_name": "Palm Phones",
+  "categories": [
+   "mobile-phones",
+   "electronics"
+  ],
+  "governorate": "Dakahlia",
+  "joined": "2020-01-21",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Top Seller",
+  "rating": 4.8,
+  "rating_count": 7827,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.36,
+   "late_shipment": 0.0,
+   "cancel": 1.1,
+   "valid_tracking": 100.0,
+   "response_24h": 92.8
+  },
+  "new_seller": false,
+  "description": "Palm Phones is a mobile phones & tablets store based in Dakahlia, selling smartphones, tablets, chargers, phone cases."
+ },
+ {
+  "seller_id": "S0011",
+  "store_name": "Star Motors",
+  "categories": [
+   "automotive"
+  ],
+  "governorate": "Cairo",
+  "joined": "2024-02-12",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 7104,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {
+   "automotive": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 70,
+   "D": null
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.88,
+   "late_shipment": 5.0,
+   "cancel": 0.1,
+   "valid_tracking": 100,
+   "response_24h": 94.3
+  },
+  "new_seller": false,
+  "description": "Star Motors is a automotive store based in Cairo, selling car accessories, tires, dash cams, car care."
+ },
+ {
+  "seller_id": "S0012",
+  "store_name": "Lotus World",
+  "categories": [
+   "grocery"
+  ],
+  "governorate": "Cairo",
+  "joined": "2022-10-22",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Rising Star",
+  "rating": 4.9,
+  "rating_count": 20902,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 55,
+   "C": 60,
+   "D": 90
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.64,
+   "late_shipment": 1.8,
+   "cancel": 0.4,
+   "valid_tracking": 97.8,
+   "response_24h": 96.7
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading grocery brands in Egypt. We sell coffee, snacks, rice, cooking oil, cleaning supplies."
+ },
+ {
+  "seller_id": "S0013",
+  "store_name": "Sphinx Sound",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Giza",
+  "joined": "2026-08-21",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 55,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 60,
+   "D": null
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.09,
+   "late_shipment": 2.8,
+   "cancel": 0.0,
+   "valid_tracking": 98.6,
+   "response_24h": 95.7
+  },
+  "new_seller": true,
+  "description": "Authorized reseller of leading electronics brands in Egypt. We sell TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0014",
+  "store_name": "Urban Hub",
+  "categories": [
+   "sports"
+  ],
+  "governorate": "Cairo",
+  "joined": "2022-01-25",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.7,
+  "rating_count": 15203,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 70,
+   "D": 110
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.17,
+   "late_shipment": 2.0,
+   "cancel": 0.5,
+   "valid_tracking": 100,
+   "response_24h": 88.3
+  },
+  "new_seller": false,
+  "description": "Family-run business from Cairo specializing in fitness equipment, bicycles, camping gear, sportswear. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0015",
+  "store_name": "Cairo Trading",
+  "categories": [
+   "electronics",
+   "home-kitchen"
+  ],
+  "governorate": "Cairo",
+  "joined": "2025-02-15",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.6,
+  "rating_count": 23345,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "home-kitchen": 45
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 70,
+   "D": null
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.39,
+   "late_shipment": 2.2,
+   "cancel": 1.8,
+   "valid_tracking": 100,
+   "response_24h": 99.7
+  },
+  "new_seller": false,
+  "description": "Family-run business from Cairo specializing in TVs, headphones, speakers, cameras, smart watches. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0016",
+  "store_name": "Golden Deals",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2020-10-23",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 14608,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "fashion-men": 45
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 70,
+   "D": 140
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.98,
+   "late_shipment": 1.8,
+   "cancel": 0.9,
+   "valid_tracking": 97.6,
+   "response_24h": 98.1
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading men's fashion brands in Egypt. We sell shirts, trousers, shoes, watches, bags."
+ },
+ {
+  "seller_id": "S0017",
+  "store_name": "Falcon Deals",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2026-09-04",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 239,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "beauty": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 60,
+   "C": 80,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": true,
+  "metrics": {
+   "odr": 0.68,
+   "late_shipment": 1.9,
+   "cancel": 2.1,
+   "valid_tracking": 100,
+   "response_24h": 94.2
+  },
+  "new_seller": true,
+  "description": "Falcon Deals is a beauty & personal care store based in Sharqia, selling skincare, makeup, perfume, hair dryers, shavers."
+ },
+ {
+  "seller_id": "S0018",
+  "store_name": "Royal Hub",
+  "categories": [
+   "electronics",
+   "books"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2025-05-15",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.9,
+  "rating_count": 9118,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 80,
+   "D": 140
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.34,
+   "late_shipment": 1.7,
+   "cancel": 1.5,
+   "valid_tracking": 96.0,
+   "response_24h": 88.8
+  },
+  "new_seller": false,
+  "description": "Royal Hub has served customers in Qalyubia since 2025. We focus on TVs, headphones, speakers, cameras, smart watches at fair prices."
+ },
+ {
+  "seller_id": "S0019",
+  "store_name": "Cairo Hub",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2023-09-16",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.7,
+  "rating_count": 24192,
+  "handling_days": 3,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 60,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.76,
+   "late_shipment": 1.8,
+   "cancel": 1.2,
+   "valid_tracking": 97.5,
+   "response_24h": 97.8
+  },
+  "new_seller": false,
+  "description": "Cairo Hub has served customers in Alexandria since 2023. We focus on cookware, bedding, furniture, storage, decor at fair prices."
+ },
+ {
+  "seller_id": "S0020",
+  "store_name": "Nile Bazaar",
+  "categories": [
+   "computers"
+  ],
+  "governorate": "Giza",
+  "joined": "2023-12-13",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.9,
+  "rating_count": 12543,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 45,
+   "C": 80,
+   "D": 110
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.06,
+   "late_shipment": 2.4,
+   "cancel": 0.5,
+   "valid_tracking": 97.9,
+   "response_24h": 97.6
+  },
+  "new_seller": false,
+  "description": "Nile Bazaar has served customers in Giza since 2023. We focus on laptops, monitors, keyboards, storage drives, printers at fair prices."
+ },
+ {
+  "seller_id": "S0021",
+  "store_name": "Delta Shop",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2020-03-08",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 5486,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "fashion-men": 45
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 80,
+   "D": null
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.38,
+   "late_shipment": 1.0,
+   "cancel": 0.4,
+   "valid_tracking": 99.2,
+   "response_24h": 98.8
+  },
+  "new_seller": false,
+  "description": "Delta Shop is a men's fashion store based in Sharqia, selling shirts, trousers, shoes, watches, bags."
+ },
+ {
+  "seller_id": "S0022",
+  "store_name": "Prime Bazaar",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Giza",
+  "joined": "2021-08-21",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 14157,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.47,
+   "late_shipment": 0.0,
+   "cancel": 0.6,
+   "valid_tracking": 100.0,
+   "response_24h": 92.8
+  },
+  "new_seller": false,
+  "description": "Prime Bazaar is a women's fashion store based in Giza, selling dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0023",
+  "store_name": "Golden Home",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2024-11-28",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 17754,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.03,
+   "late_shipment": 0.0,
+   "cancel": 0.7,
+   "valid_tracking": 100.0,
+   "response_24h": 83.7
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading home & kitchen brands in Egypt. We sell cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0024",
+  "store_name": "Star Trading",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2022-03-02",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 17048,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 60,
+   "C": 70,
+   "D": 110
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.4,
+   "late_shipment": 0.4,
+   "cancel": 1.0,
+   "valid_tracking": 97.9,
+   "response_24h": 97.2
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading men's fashion brands in Egypt. We sell shirts, trousers, shoes, watches, bags."
+ },
+ {
+  "seller_id": "S0025",
+  "store_name": "Crescent Point",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Giza",
+  "joined": "2024-12-01",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 24462,
+  "handling_days": 3,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 70,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.99,
+   "late_shipment": 1.5,
+   "cancel": 0.3,
+   "valid_tracking": 98.0,
+   "response_24h": 96.0
+  },
+  "new_seller": false,
+  "description": "Family-run business from Giza specializing in shirts, trousers, shoes, watches, bags. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0026",
+  "store_name": "Falcon Boutique",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2021-08-04",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.2,
+  "rating_count": 24787,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.19,
+   "late_shipment": 0.0,
+   "cancel": 1.5,
+   "valid_tracking": 100.0,
+   "response_24h": 95.1
+  },
+  "new_seller": false,
+  "description": "Family-run business from Qalyubia specializing in smartphones, tablets, chargers, phone cases. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0027",
+  "store_name": "Blue Point",
+  "categories": [
+   "books"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2021-06-25",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.5,
+  "rating_count": 12584,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 65,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.45,
+   "late_shipment": 2.8,
+   "cancel": 1.2,
+   "valid_tracking": 96.3,
+   "response_24h": 92.5
+  },
+  "new_seller": false,
+  "description": "Family-run business from Sharqia specializing in novels, textbooks, children's books. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0028",
+  "store_name": "Falcon Mart",
+  "categories": [
+   "home-appliances"
+  ],
+  "governorate": "Sohag",
+  "joined": "2021-09-29",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 20601,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {
+   "home-appliances": 30
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 60,
+   "D": 110
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.74,
+   "late_shipment": 1.5,
+   "cancel": 1.5,
+   "valid_tracking": 98.4,
+   "response_24h": 92.8
+  },
+  "new_seller": false,
+  "description": "Family-run business from Sohag specializing in refrigerators, washing machines, air conditioners, blenders, irons. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0029",
+  "store_name": "Sphinx Hub",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-08-26",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.8,
+  "rating_count": 249,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 70,
+   "D": 140
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.21,
+   "late_shipment": 0.1,
+   "cancel": 1.3,
+   "valid_tracking": 100,
+   "response_24h": 89.8
+  },
+  "new_seller": true,
+  "description": "Authorized reseller of leading women's fashion brands in Egypt. We sell dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0030",
+  "store_name": "Lotus Point",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2024-05-16",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 10426,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "fashion-women": 60
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 70,
+   "D": 140
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.31,
+   "late_shipment": 1.4,
+   "cancel": 0.3,
+   "valid_tracking": 100,
+   "response_24h": 91.5
+  },
+  "new_seller": false,
+  "description": "Lotus Point is a women's fashion store based in Alexandria, selling dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0031",
+  "store_name": "Urban Glow",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Aswan",
+  "joined": "2023-06-21",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 3837,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {
+   "beauty": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 60,
+   "D": 110
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.65,
+   "late_shipment": 1.5,
+   "cancel": 0.2,
+   "valid_tracking": 99.8,
+   "response_24h": 94.4
+  },
+  "new_seller": false,
+  "description": "Family-run business from Aswan specializing in skincare, makeup, perfume, hair dryers, shavers. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0032",
+  "store_name": "Green Trading",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Port Said",
+  "joined": "2024-10-28",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.1,
+  "rating_count": 19122,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 55,
+   "C": 80,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.48,
+   "late_shipment": 3.4,
+   "cancel": 0.5,
+   "valid_tracking": 98.6,
+   "response_24h": 91.1
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading women's fashion brands in Egypt. We sell dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0033",
+  "store_name": "Sun Bazaar",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Asyut",
+  "joined": "2023-01-09",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 14547,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 60,
+   "C": 80,
+   "D": 110
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.99,
+   "late_shipment": 1.4,
+   "cancel": 0.9,
+   "valid_tracking": 95.6,
+   "response_24h": 93.9
+  },
+  "new_seller": false,
+  "description": "Sun Bazaar is a home & kitchen store based in Asyut, selling cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0034",
+  "store_name": "Papyrus Hub",
+  "categories": [
+   "health"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2026-09-07",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 514,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.03,
+   "late_shipment": 0.0,
+   "cancel": 1.4,
+   "valid_tracking": 100.0,
+   "response_24h": 91.0
+  },
+  "new_seller": true,
+  "description": "Authorized reseller of leading health & nutrition brands in Egypt. We sell vitamins, protein powder, blood pressure monitors."
+ },
+ {
+  "seller_id": "S0035",
+  "store_name": "Luxor Outlet",
+  "categories": [
+   "electronics",
+   "kids-baby"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2024-04-12",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 8011,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {
+   "electronics": 30,
+   "kids-baby": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 65,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.42,
+   "late_shipment": 0.6,
+   "cancel": 0.3,
+   "valid_tracking": 98.4,
+   "response_24h": 95.4
+  },
+  "new_seller": false,
+  "description": "Luxor Outlet has served customers in Qalyubia since 2024. We focus on TVs, headphones, speakers, cameras, smart watches at fair prices."
+ },
+ {
+  "seller_id": "S0036",
+  "store_name": "Horus Beauty",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2024-08-18",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 23033,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 80,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.96,
+   "late_shipment": 2.3,
+   "cancel": 1.6,
+   "valid_tracking": 96.7,
+   "response_24h": 94.3
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading beauty & personal care brands in Egypt. We sell skincare, makeup, perfume, hair dryers, shavers."
+ },
+ {
+  "seller_id": "S0037",
+  "store_name": "Horus Electric",
+  "categories": [
+   "home-appliances"
+  ],
+  "governorate": "Giza",
+  "joined": "2024-12-25",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 13735,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "home-appliances": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 45,
+   "C": 60,
+   "D": 130
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.31,
+   "late_shipment": 1.9,
+   "cancel": 0.7,
+   "valid_tracking": 97.4,
+   "response_24h": 95.6
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading home appliances brands in Egypt. We sell refrigerators, washing machines, air conditioners, blenders, irons."
+ },
+ {
+  "seller_id": "S0038",
+  "store_name": "Blue Boutique",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2023-03-19",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.9,
+  "rating_count": 21043,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.91,
+   "late_shipment": 3.7,
+   "cancel": 1.0,
+   "valid_tracking": 95.4,
+   "response_24h": 95.7
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading toys & games brands in Egypt. We sell LEGO-style building sets, dolls, board games, RC cars."
+ },
+ {
+  "seller_id": "S0039",
+  "store_name": "Sun Deals",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2021-11-23",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 23929,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "electronics": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 60,
+   "D": 110
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.74,
+   "late_shipment": 2.4,
+   "cancel": 0.6,
+   "valid_tracking": 95.4,
+   "response_24h": 95.7
+  },
+  "new_seller": false,
+  "description": "Sun Deals has served customers in Alexandria since 2021. We focus on TVs, headphones, speakers, cameras, smart watches at fair prices."
+ },
+ {
+  "seller_id": "S0040",
+  "store_name": "Sphinx Baby",
+  "categories": [
+   "kids-baby"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2021-11-06",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 19687,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 45,
+   "C": 80,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.46,
+   "late_shipment": 2.1,
+   "cancel": 1.3,
+   "valid_tracking": 99.1,
+   "response_24h": 90.4
+  },
+  "new_seller": false,
+  "description": "Family-run business from Qalyubia specializing in strollers, car seats, baby clothes, feeding bottles. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0041",
+  "store_name": "Sahara Paws",
+  "categories": [
+   "pet-supplies"
+  ],
+  "governorate": "Aswan",
+  "joined": "2025-08-18",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Rising Star",
+  "rating": 4.6,
+  "rating_count": 17821,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.34,
+   "late_shipment": 0.0,
+   "cancel": 2.5,
+   "valid_tracking": 100.0,
+   "response_24h": 94.1
+  },
+  "new_seller": false,
+  "description": "Family-run business from Aswan specializing in pet food, litter, toys, carriers. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0042",
+  "store_name": "Pyramid Toys",
+  "categories": [
+   "toys",
+   "books"
+  ],
+  "governorate": "Cairo",
+  "joined": "2022-01-30",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 15815,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "toys": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 60,
+   "C": 65,
+   "D": 90
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.81,
+   "late_shipment": 1.3,
+   "cancel": 0.8,
+   "valid_tracking": 97.2,
+   "response_24h": 91.2
+  },
+  "new_seller": false,
+  "description": "Pyramid Toys is a toys & games store based in Cairo, selling LEGO-style building sets, dolls, board games, RC cars."
+ },
+ {
+  "seller_id": "S0043",
+  "store_name": "Cairo Deals",
+  "categories": [
+   "health"
+  ],
+  "governorate": "Cairo",
+  "joined": "2020-02-25",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 23115,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.28,
+   "late_shipment": 0.0,
+   "cancel": 0.6,
+   "valid_tracking": 100.0,
+   "response_24h": 98.6
+  },
+  "new_seller": false,
+  "description": "Cairo Deals has served customers in Cairo since 2020. We focus on vitamins, protein powder, blood pressure monitors at fair prices."
+ },
+ {
+  "seller_id": "S0044",
+  "store_name": "Sun Corner",
+  "categories": [
+   "books"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2021-12-22",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 18522,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {
+   "books": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 45,
+   "C": 60,
+   "D": 90
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.98,
+   "late_shipment": 2.4,
+   "cancel": 1.1,
+   "valid_tracking": 97.8,
+   "response_24h": 86.7
+  },
+  "new_seller": false,
+  "description": "Sun Corner is a books store based in Alexandria, selling novels, textbooks, children's books."
+ },
+ {
+  "seller_id": "S0045",
+  "store_name": "Urban Kitchen",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2026-02-23",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.2,
+  "rating_count": 18932,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.59,
+   "late_shipment": 0.0,
+   "cancel": 0.3,
+   "valid_tracking": 100.0,
+   "response_24h": 98.1
+  },
+  "new_seller": false,
+  "description": "Urban Kitchen is a home & kitchen store based in Sharqia, selling cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0046",
+  "store_name": "Falcon Toys",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Cairo",
+  "joined": "2022-05-31",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 20867,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.3,
+   "late_shipment": 0.0,
+   "cancel": 1.6,
+   "valid_tracking": 100.0,
+   "response_24h": 98.6
+  },
+  "new_seller": false,
+  "description": "Falcon Toys is a toys & games store based in Cairo, selling LEGO-style building sets, dolls, board games, RC cars."
+ },
+ {
+  "seller_id": "S0047",
+  "store_name": "Prime House",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Giza",
+  "joined": "2021-03-06",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Rising Star",
+  "rating": 4.5,
+  "rating_count": 9401,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {
+   "electronics": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 80,
+   "D": 140
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.09,
+   "late_shipment": 0.6,
+   "cancel": 0.4,
+   "valid_tracking": 98.5,
+   "response_24h": 98.7
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading electronics brands in Egypt. We sell TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0048",
+  "store_name": "Delta Computers",
+  "categories": [
+   "computers"
+  ],
+  "governorate": "Ismailia",
+  "joined": "2021-10-13",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 18986,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 40,
+   "B": 55,
+   "C": 60,
+   "D": null
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.8,
+   "late_shipment": 0.2,
+   "cancel": 1.7,
+   "valid_tracking": 96.2,
+   "response_24h": 95.7
+  },
+  "new_seller": false,
+  "description": "Delta Computers is a computers & accessories store based in Ismailia, selling laptops, monitors, keyboards, storage drives, printers."
+ },
+ {
+  "seller_id": "S0049",
+  "store_name": "Falcon World",
+  "categories": [
+   "mobile-phones",
+   "home-appliances"
+  ],
+  "governorate": "Sharqia",
+  "joined": "2023-06-22",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 2622,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.13,
+   "late_shipment": 0.0,
+   "cancel": 0.6,
+   "valid_tracking": 100.0,
+   "response_24h": 97.4
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading mobile phones & tablets brands in Egypt. We sell smartphones, tablets, chargers, phone cases."
+ },
+ {
+  "seller_id": "S0050",
+  "store_name": "Smart Hub",
+  "categories": [
+   "fashion-women",
+   "sports"
+  ],
+  "governorate": "Dakahlia",
+  "joined": "2021-01-20",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Top Seller",
+  "rating": 4.7,
+  "rating_count": 18617,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.15,
+   "late_shipment": 0.0,
+   "cancel": 0.3,
+   "valid_tracking": 100.0,
+   "response_24h": 90.8
+  },
+  "new_seller": false,
+  "description": "Smart Hub has served customers in Dakahlia since 2021. We focus on dresses, abayas, shoes, handbags, jewelry at fair prices."
+ },
+ {
+  "seller_id": "S0051",
+  "store_name": "Papyrus Deals",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2020-03-06",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 18283,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "beauty": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 45,
+   "B": 55,
+   "C": 60,
+   "D": null
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.09,
+   "late_shipment": 0.7,
+   "cancel": 0.8,
+   "valid_tracking": 100,
+   "response_24h": 96.9
+  },
+  "new_seller": false,
+  "description": "Papyrus Deals has served customers in Alexandria since 2020. We focus on skincare, makeup, perfume, hair dryers, shavers at fair prices."
+ },
+ {
+  "seller_id": "S0052",
+  "store_name": "Pyramid Electric",
+  "categories": [
+   "home-appliances"
+  ],
+  "governorate": "Cairo",
+  "joined": "2023-04-07",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 3216,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 55,
+   "C": 70,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": true,
+  "metrics": {
+   "odr": 0.51,
+   "late_shipment": 0.2,
+   "cancel": 1.8,
+   "valid_tracking": 97.7,
+   "response_24h": 92.8
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading home appliances brands in Egypt. We sell refrigerators, washing machines, air conditioners, blenders, irons."
+ },
+ {
+  "seller_id": "S0053",
+  "store_name": "Pyramid Shop",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2023-10-23",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.8,
+  "rating_count": 13994,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.86,
+   "late_shipment": 0.0,
+   "cancel": 1.8,
+   "valid_tracking": 100.0,
+   "response_24h": 98.5
+  },
+  "new_seller": false,
+  "description": "Pyramid Shop is a home & kitchen store based in Qalyubia, selling cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0054",
+  "store_name": "Lotus Corner",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Dakahlia",
+  "joined": "2024-11-12",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 20371,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.88,
+   "late_shipment": 0.0,
+   "cancel": 0.4,
+   "valid_tracking": 100.0,
+   "response_24h": 92.4
+  },
+  "new_seller": false,
+  "description": "Lotus Corner is a home & kitchen store based in Dakahlia, selling cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0055",
+  "store_name": "Crescent Store",
+  "categories": [
+   "kids-baby",
+   "mobile-phones"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2019-11-26",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 13838,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 65,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.03,
+   "late_shipment": 1.0,
+   "cancel": 0.0,
+   "valid_tracking": 95.1,
+   "response_24h": 96.5
+  },
+  "new_seller": false,
+  "description": "Crescent Store has served customers in Alexandria since 2019. We focus on strollers, car seats, baby clothes, feeding bottles at fair prices."
+ },
+ {
+  "seller_id": "S0056",
+  "store_name": "Smart Mart",
+  "categories": [
+   "books",
+   "fashion-men"
+  ],
+  "governorate": "Cairo",
+  "joined": "2025-03-14",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 10562,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "books": 45
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.28,
+   "late_shipment": 3.5,
+   "cancel": 1.2,
+   "valid_tracking": 98.5,
+   "response_24h": 100
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading books brands in Egypt. We sell novels, textbooks, children's books."
+ },
+ {
+  "seller_id": "S0057",
+  "store_name": "Blue Hub",
+  "categories": [
+   "sports",
+   "home-appliances"
+  ],
+  "governorate": "Cairo",
+  "joined": "2024-09-03",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 16498,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 55,
+   "C": 65,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.75,
+   "late_shipment": 2.6,
+   "cancel": 1.3,
+   "valid_tracking": 96.4,
+   "response_24h": 89.7
+  },
+  "new_seller": false,
+  "description": "Blue Hub is a sports & outdoors store based in Cairo, selling fitness equipment, bicycles, camping gear, sportswear."
+ },
+ {
+  "seller_id": "S0058",
+  "store_name": "Smart Outlet",
+  "categories": [
+   "health",
+   "electronics"
+  ],
+  "governorate": "Cairo",
+  "joined": "2021-07-07",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 21651,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 60,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.58,
+   "late_shipment": 2.9,
+   "cancel": 0.8,
+   "valid_tracking": 100,
+   "response_24h": 94.7
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading health & nutrition brands in Egypt. We sell vitamins, protein powder, blood pressure monitors."
+ },
+ {
+  "seller_id": "S0059",
+  "store_name": "Golden Store",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Cairo",
+  "joined": "2024-08-16",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 24803,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": false,
+  "shipping_fees": {
+   "A": 40,
+   "B": 45,
+   "C": 65,
+   "D": null
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.8,
+   "late_shipment": 2.8,
+   "cancel": 0.4,
+   "valid_tracking": 97.3,
+   "response_24h": 97.7
+  },
+  "new_seller": false,
+  "description": "Golden Store has served customers in Cairo since 2024. We focus on smartphones, tablets, chargers, phone cases at fair prices."
+ },
+ {
+  "seller_id": "S0060",
+  "store_name": "Prime World",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2023-10-01",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 6033,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.24,
+   "late_shipment": 0.0,
+   "cancel": 1.6,
+   "valid_tracking": 100.0,
+   "response_24h": 96.1
+  },
+  "new_seller": false,
+  "description": "Prime World has served customers in Qalyubia since 2023. We focus on smartphones, tablets, chargers, phone cases at fair prices."
+ },
+ {
+  "seller_id": "S0061",
+  "store_name": "Luxor World",
+  "categories": [
+   "home-appliances",
+   "beauty"
+  ],
+  "governorate": "Cairo",
+  "joined": "2024-03-11",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 21010,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.81,
+   "late_shipment": 0.0,
+   "cancel": 0.1,
+   "valid_tracking": 100.0,
+   "response_24h": 96.3
+  },
+  "new_seller": false,
+  "description": "Luxor World is a home appliances store based in Cairo, selling refrigerators, washing machines, air conditioners, blenders, irons."
+ },
+ {
+  "seller_id": "S0062",
+  "store_name": "Lotus Boutique",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-03-24",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 3837,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "fashion-women": 45
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 70,
+   "D": 140
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.81,
+   "late_shipment": 2.0,
+   "cancel": 0.1,
+   "valid_tracking": 96.2,
+   "response_24h": 93.3
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading women's fashion brands in Egypt. We sell dresses, abayas, shoes, handbags, jewelry."
+ },
+ {
+  "seller_id": "S0063",
+  "store_name": "Crescent World",
+  "categories": [
+   "grocery",
+   "sports"
+  ],
+  "governorate": "Damietta",
+  "joined": "2026-04-11",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.2,
+  "rating_count": 10592,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.61,
+   "late_shipment": 0.0,
+   "cancel": 1.6,
+   "valid_tracking": 100.0,
+   "response_24h": 91.4
+  },
+  "new_seller": false,
+  "description": "Crescent World is a grocery store based in Damietta, selling coffee, snacks, rice, cooking oil, cleaning supplies."
+ },
+ {
+  "seller_id": "S0064",
+  "store_name": "Luxor Store",
+  "categories": [
+   "home-kitchen",
+   "fashion-women"
+  ],
+  "governorate": "Port Said",
+  "joined": "2021-05-14",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.6,
+  "rating_count": 2536,
+  "handling_days": 1,
+  "cod": false,
+  "return_overrides": {
+   "fashion-women": 60
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 45,
+   "C": 60,
+   "D": 130
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.79,
+   "late_shipment": 0.1,
+   "cancel": 1.7,
+   "valid_tracking": 96.2,
+   "response_24h": 94.5
+  },
+  "new_seller": false,
+  "description": "Luxor Store has served customers in Port Said since 2021. We focus on cookware, bedding, furniture, storage, decor at fair prices."
+ },
+ {
+  "seller_id": "S0065",
+  "store_name": "Pyramid House",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Cairo",
+  "joined": "2020-01-13",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 20582,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {
+   "fashion-men": 60
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 50,
+   "C": 70,
+   "D": 110
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.82,
+   "late_shipment": 0.3,
+   "cancel": 0.1,
+   "valid_tracking": 100,
+   "response_24h": 97.2
+  },
+  "new_seller": false,
+  "description": "Family-run business from Cairo specializing in shirts, trousers, shoes, watches, bags. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0066",
+  "store_name": "Papyrus Trading",
+  "categories": [
+   "toys",
+   "electronics"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2025-10-30",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 10362,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 80,
+   "D": 90
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.61,
+   "late_shipment": 1.5,
+   "cancel": 0.5,
+   "valid_tracking": 96.3,
+   "response_24h": 96.3
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading toys & games brands in Egypt. We sell LEGO-style building sets, dolls, board games, RC cars."
+ },
+ {
+  "seller_id": "S0067",
+  "store_name": "Sun Mart",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Damietta",
+  "joined": "2024-08-23",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 19049,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.7,
+   "late_shipment": 0.0,
+   "cancel": 0.9,
+   "valid_tracking": 100.0,
+   "response_24h": 99.0
+  },
+  "new_seller": false,
+  "description": "Family-run business from Damietta specializing in smartphones, tablets, chargers, phone cases. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0068",
+  "store_name": "Royal Point",
+  "categories": [
+   "mobile-phones",
+   "pet-supplies"
+  ],
+  "governorate": "Cairo",
+  "joined": "2024-12-28",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 3.5,
+  "rating_count": 387,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.56,
+   "late_shipment": 0.0,
+   "cancel": 1.8,
+   "valid_tracking": 100.0,
+   "response_24h": 95.5
+  },
+  "new_seller": false,
+  "description": "Royal Point has served customers in Cairo since 2024. We focus on smartphones, tablets, chargers, phone cases at fair prices."
+ },
+ {
+  "seller_id": "S0069",
+  "store_name": "Prime Shop",
+  "categories": [
+   "mobile-phones",
+   "home-kitchen"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-08-11",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 536,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.55,
+   "late_shipment": 1.3,
+   "cancel": 2.6,
+   "valid_tracking": 96.4,
+   "response_24h": 92.6
+  },
+  "new_seller": true,
+  "description": "Family-run business from Cairo specializing in smartphones, tablets, chargers, phone cases. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0070",
+  "store_name": "Green World",
+  "categories": [
+   "health"
+  ],
+  "governorate": "Gharbia",
+  "joined": "2025-03-12",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 9943,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.96,
+   "late_shipment": 0.0,
+   "cancel": 0.1,
+   "valid_tracking": 100.0,
+   "response_24h": 91.4
+  },
+  "new_seller": false,
+  "description": "Green World has served customers in Gharbia since 2025. We focus on vitamins, protein powder, blood pressure monitors at fair prices."
+ },
+ {
+  "seller_id": "S0071",
+  "store_name": "Horus Mart",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Gharbia",
+  "joined": "2025-12-16",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.7,
+  "rating_count": 19240,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.19,
+   "late_shipment": 0.0,
+   "cancel": 0.3,
+   "valid_tracking": 100.0,
+   "response_24h": 85.1
+  },
+  "new_seller": false,
+  "description": "Family-run business from Gharbia specializing in LEGO-style building sets, dolls, board games, RC cars. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0072",
+  "store_name": "Falcon Bazaar",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Asyut",
+  "joined": "2022-02-17",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 24231,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.65,
+   "late_shipment": 0.0,
+   "cancel": 0.6,
+   "valid_tracking": 100.0,
+   "response_24h": 90.2
+  },
+  "new_seller": false,
+  "description": "Falcon Bazaar has served customers in Asyut since 2022. We focus on smartphones, tablets, chargers, phone cases at fair prices."
+ },
+ {
+  "seller_id": "S0073",
+  "store_name": "Horus Point",
+  "categories": [
+   "health"
+  ],
+  "governorate": "Gharbia",
+  "joined": "2022-12-07",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 22737,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 65,
+   "D": 110
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.5,
+   "late_shipment": 1.6,
+   "cancel": 1.6,
+   "valid_tracking": 100,
+   "response_24h": 89.9
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading health & nutrition brands in Egypt. We sell vitamins, protein powder, blood pressure monitors."
+ },
+ {
+  "seller_id": "S0074",
+  "store_name": "Pyramid Boutique",
+  "categories": [
+   "home-appliances"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-08-15",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 260,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.06,
+   "late_shipment": 0.0,
+   "cancel": 0.9,
+   "valid_tracking": 100.0,
+   "response_24h": 91.8
+  },
+  "new_seller": true,
+  "description": "Authorized reseller of leading home appliances brands in Egypt. We sell refrigerators, washing machines, air conditioners, blenders, irons."
+ },
+ {
+  "seller_id": "S0075",
+  "store_name": "Papyrus Outlet",
+  "categories": [
+   "beauty"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2026-09-26",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 219,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.4,
+   "late_shipment": 0.0,
+   "cancel": 1.4,
+   "valid_tracking": 100.0,
+   "response_24h": 93.7
+  },
+  "new_seller": true,
+  "description": "Papyrus Outlet has served customers in Alexandria since 2026. We focus on skincare, makeup, perfume, hair dryers, shavers at fair prices."
+ },
+ {
+  "seller_id": "S0076",
+  "store_name": "Cairo Outlet",
+  "categories": [
+   "home-appliances"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2019-10-31",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 21134,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 70,
+   "D": 90
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.43,
+   "late_shipment": 3.7,
+   "cancel": 1.0,
+   "valid_tracking": 100,
+   "response_24h": 100
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading home appliances brands in Egypt. We sell refrigerators, washing machines, air conditioners, blenders, irons."
+ },
+ {
+  "seller_id": "S0077",
+  "store_name": "Royal Trading",
+  "categories": [
+   "mobile-phones"
+  ],
+  "governorate": "Cairo",
+  "joined": "2019-07-28",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 12688,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 6,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.32,
+   "late_shipment": 1.3,
+   "cancel": 0.5,
+   "valid_tracking": 99.0,
+   "response_24h": 96.7
+  },
+  "new_seller": false,
+  "description": "Family-run business from Cairo specializing in smartphones, tablets, chargers, phone cases. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0078",
+  "store_name": "Sphinx Shop",
+  "categories": [
+   "kids-baby"
+  ],
+  "governorate": "Giza",
+  "joined": "2020-02-10",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.7,
+  "rating_count": 18117,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 55,
+   "C": 70,
+   "D": 110
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.11,
+   "late_shipment": 2.0,
+   "cancel": 1.3,
+   "valid_tracking": 99.7,
+   "response_24h": 99.4
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading kids & baby brands in Egypt. We sell strollers, car seats, baby clothes, feeding bottles."
+ },
+ {
+  "seller_id": "S0079",
+  "store_name": "Falcon Outdoors",
+  "categories": [
+   "sports"
+  ],
+  "governorate": "Damietta",
+  "joined": "2025-05-03",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 14978,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 50,
+   "C": 70,
+   "D": 140
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.54,
+   "late_shipment": 2.6,
+   "cancel": 1.3,
+   "valid_tracking": 97.3,
+   "response_24h": 93.1
+  },
+  "new_seller": false,
+  "description": "Falcon Outdoors has served customers in Damietta since 2025. We focus on fitness equipment, bicycles, camping gear, sportswear at fair prices."
+ },
+ {
+  "seller_id": "S0080",
+  "store_name": "Luxor Boutique",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Giza",
+  "joined": "2019-06-13",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Top Seller",
+  "rating": 4.7,
+  "rating_count": 12653,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 60,
+   "C": 60,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.7,
+   "late_shipment": 0.4,
+   "cancel": 1.6,
+   "valid_tracking": 98.5,
+   "response_24h": 83.0
+  },
+  "new_seller": false,
+  "description": "Luxor Boutique has served customers in Giza since 2019. We focus on dresses, abayas, shoes, handbags, jewelry at fair prices."
+ },
+ {
+  "seller_id": "S0081",
+  "store_name": "Papyrus Shop",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-09-24",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.4,
+  "rating_count": 444,
+  "handling_days": 3,
+  "cod": false,
+  "return_overrides": {
+   "electronics": 30
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 60,
+   "C": 65,
+   "D": 110
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.63,
+   "late_shipment": 1.0,
+   "cancel": 1.0,
+   "valid_tracking": 99.4,
+   "response_24h": 100
+  },
+  "new_seller": true,
+  "description": "Papyrus Shop is a electronics store based in Cairo, selling TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0082",
+  "store_name": "Royal Sound",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Cairo",
+  "joined": "2019-11-29",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Rising Star",
+  "rating": 4.5,
+  "rating_count": 19507,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 55,
+   "C": 65,
+   "D": 130
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.38,
+   "late_shipment": 4.9,
+   "cancel": 0.7,
+   "valid_tracking": 96.2,
+   "response_24h": 93.4
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading electronics brands in Egypt. We sell TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0083",
+  "store_name": "Horus Bazaar",
+  "categories": [
+   "pet-supplies"
+  ],
+  "governorate": "Giza",
+  "joined": "2022-12-27",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 2710,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {
+   "pet-supplies": 60
+  },
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 60,
+   "C": 60,
+   "D": 140
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.84,
+   "late_shipment": 3.7,
+   "cancel": 0.7,
+   "valid_tracking": 98.9,
+   "response_24h": 96.2
+  },
+  "new_seller": false,
+  "description": "Family-run business from Giza specializing in pet food, litter, toys, carriers. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0084",
+  "store_name": "Falcon Sound",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Giza",
+  "joined": "2021-07-10",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 7962,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 65,
+   "D": 90
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.35,
+   "late_shipment": 1.8,
+   "cancel": 0.4,
+   "valid_tracking": 100,
+   "response_24h": 90.8
+  },
+  "new_seller": false,
+  "description": "Family-run business from Giza specializing in TVs, headphones, speakers, cameras, smart watches. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0085",
+  "store_name": "Green Point",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2024-09-05",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.5,
+  "rating_count": 22561,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 55,
+   "C": 80,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.93,
+   "late_shipment": 2.6,
+   "cancel": 1.5,
+   "valid_tracking": 95.5,
+   "response_24h": 99.2
+  },
+  "new_seller": false,
+  "description": "Green Point has served customers in Alexandria since 2024. We focus on dresses, abayas, shoes, handbags, jewelry at fair prices."
+ },
+ {
+  "seller_id": "S0086",
+  "store_name": "Smart Store",
+  "categories": [
+   "fashion-men"
+  ],
+  "governorate": "Dakahlia",
+  "joined": "2025-07-17",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 635,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "fashion-men": 45
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 65,
+   "D": 90
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.45,
+   "late_shipment": 1.7,
+   "cancel": 0.8,
+   "valid_tracking": 96.3,
+   "response_24h": 93.9
+  },
+  "new_seller": false,
+  "description": "Smart Store has served customers in Dakahlia since 2025. We focus on shirts, trousers, shoes, watches, bags at fair prices."
+ },
+ {
+  "seller_id": "S0087",
+  "store_name": "Sun Boutique",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Dakahlia",
+  "joined": "2026-09-29",
+  "plan": "Individual",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 97,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "electronics": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 45,
+   "B": 60,
+   "C": 60,
+   "D": 130
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.71,
+   "late_shipment": 3.4,
+   "cancel": 0.7,
+   "valid_tracking": 98.1,
+   "response_24h": 100
+  },
+  "new_seller": true,
+  "description": "Authorized reseller of leading electronics brands in Egypt. We sell TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0088",
+  "store_name": "Blue House",
+  "categories": [
+   "electronics",
+   "mobile-phones"
+  ],
+  "governorate": "Sohag",
+  "joined": "2023-02-16",
+  "plan": "Individual",
+  "fulfillment": "Seller",
+  "tier": "Rising Star",
+  "rating": 4.8,
+  "rating_count": 9926,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {
+   "electronics": 45,
+   "mobile-phones": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 35,
+   "B": 50,
+   "C": 70,
+   "D": 90
+  },
+  "free_shipping_over": 1000,
+  "policy_conflict": true,
+  "metrics": {
+   "odr": 0.88,
+   "late_shipment": 3.7,
+   "cancel": 0.6,
+   "valid_tracking": 98.0,
+   "response_24h": 87.7
+  },
+  "new_seller": false,
+  "description": "Blue House has served customers in Sohag since 2023. We focus on TVs, headphones, speakers, cameras, smart watches at fair prices."
+ },
+ {
+  "seller_id": "S0089",
+  "store_name": "Crescent Living",
+  "categories": [
+   "home-kitchen"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2023-04-17",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 14883,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.29,
+   "late_shipment": 0.0,
+   "cancel": 0.2,
+   "valid_tracking": 100.0,
+   "response_24h": 98.2
+  },
+  "new_seller": false,
+  "description": "Crescent Living is a home & kitchen store based in Qalyubia, selling cookware, bedding, furniture, storage, decor."
+ },
+ {
+  "seller_id": "S0090",
+  "store_name": "Lotus Bazaar",
+  "categories": [
+   "computers"
+  ],
+  "governorate": "Cairo",
+  "joined": "2026-09-11",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 206,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 70,
+   "D": 90
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.71,
+   "late_shipment": 4.8,
+   "cancel": 1.9,
+   "valid_tracking": 95.1,
+   "response_24h": 96.3
+  },
+  "new_seller": true,
+  "description": "Lotus Bazaar is a computers & accessories store based in Cairo, selling laptops, monitors, keyboards, storage drives, printers."
+ },
+ {
+  "seller_id": "S0091",
+  "store_name": "Prime Electronics",
+  "categories": [
+   "electronics"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2023-10-06",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 3.4,
+  "rating_count": 2640,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 12,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 50,
+   "C": 70,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.14,
+   "late_shipment": 1.7,
+   "cancel": 1.3,
+   "valid_tracking": 98.7,
+   "response_24h": 96.8
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading electronics brands in Egypt. We sell TVs, headphones, speakers, cameras, smart watches."
+ },
+ {
+  "seller_id": "S0092",
+  "store_name": "Prime Deals",
+  "categories": [
+   "fashion-men",
+   "electronics"
+  ],
+  "governorate": "Giza",
+  "joined": "2023-09-04",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.1,
+  "rating_count": 12995,
+  "handling_days": 2,
+  "cod": true,
+  "return_overrides": {
+   "electronics": 30
+  },
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 60,
+   "C": 70,
+   "D": 130
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.23,
+   "late_shipment": 1.6,
+   "cancel": 0.2,
+   "valid_tracking": 100,
+   "response_24h": 92.6
+  },
+  "new_seller": false,
+  "description": "Authorized reseller of leading men's fashion brands in Egypt. We sell shirts, trousers, shoes, watches, bags."
+ },
+ {
+  "seller_id": "S0093",
+  "store_name": "Horus Kids",
+  "categories": [
+   "kids-baby"
+  ],
+  "governorate": "Aswan",
+  "joined": "2024-08-03",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Rising Star",
+  "rating": 4.6,
+  "rating_count": 15823,
+  "handling_days": 3,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 50,
+   "C": 70,
+   "D": 110
+  },
+  "free_shipping_over": 1500,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.12,
+   "late_shipment": 1.8,
+   "cancel": 1.4,
+   "valid_tracking": 96.4,
+   "response_24h": 95.8
+  },
+  "new_seller": false,
+  "description": "Horus Kids has served customers in Aswan since 2024. We focus on strollers, car seats, baby clothes, feeding bottles at fair prices."
+ },
+ {
+  "seller_id": "S0094",
+  "store_name": "Smart Couture",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Giza",
+  "joined": "2026-09-05",
+  "plan": "Professional",
+  "fulfillment": "Seller",
+  "tier": "Standard",
+  "rating": 4.3,
+  "rating_count": 415,
+  "handling_days": 2,
+  "cod": false,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 50,
+   "B": 55,
+   "C": 80,
+   "D": 90
+  },
+  "free_shipping_over": 750,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.5,
+   "late_shipment": 3.0,
+   "cancel": 0.9,
+   "valid_tracking": 95.8,
+   "response_24h": 93.7
+  },
+  "new_seller": true,
+  "description": "Family-run business from Giza specializing in dresses, abayas, shoes, handbags, jewelry. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0095",
+  "store_name": "Urban Living",
+  "categories": [
+   "home-kitchen",
+   "mobile-phones"
+  ],
+  "governorate": "Giza",
+  "joined": "2026-08-23",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.5,
+  "rating_count": 322,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "seller pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.13,
+   "late_shipment": 0.0,
+   "cancel": 1.9,
+   "valid_tracking": 100.0,
+   "response_24h": 97.7
+  },
+  "new_seller": true,
+  "description": "Urban Living has served customers in Giza since 2026. We focus on cookware, bedding, furniture, storage, decor at fair prices."
+ },
+ {
+  "seller_id": "S0096",
+  "store_name": "Papyrus Mart",
+  "categories": [
+   "toys",
+   "books"
+  ],
+  "governorate": "Cairo",
+  "joined": "2021-04-04",
+  "plan": "Professional",
+  "fulfillment": "Both",
+  "tier": "Standard",
+  "rating": 4.0,
+  "rating_count": 7158,
+  "handling_days": 1,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": {
+   "A": 40,
+   "B": 50,
+   "C": 80,
+   "D": 140
+  },
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.55,
+   "late_shipment": 3.8,
+   "cancel": 1.1,
+   "valid_tracking": 98.8,
+   "response_24h": 99.1
+  },
+  "new_seller": false,
+  "description": "Papyrus Mart has served customers in Cairo since 2021. We focus on LEGO-style building sets, dolls, board games, RC cars at fair prices."
+ },
+ {
+  "seller_id": "S0097",
+  "store_name": "Smart Deals",
+  "categories": [
+   "fashion-women"
+  ],
+  "governorate": "Qalyubia",
+  "joined": "2020-09-09",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 22192,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.5,
+   "late_shipment": 0.0,
+   "cancel": 0.3,
+   "valid_tracking": 100.0,
+   "response_24h": 92.1
+  },
+  "new_seller": false,
+  "description": "Smart Deals has served customers in Qalyubia since 2020. We focus on dresses, abayas, shoes, handbags, jewelry at fair prices."
+ },
+ {
+  "seller_id": "S0098",
+  "store_name": "Star Kids",
+  "categories": [
+   "toys"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2022-12-04",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.6,
+  "rating_count": 17728,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 1.16,
+   "late_shipment": 0.0,
+   "cancel": 1.4,
+   "valid_tracking": 100.0,
+   "response_24h": 97.0
+  },
+  "new_seller": false,
+  "description": "Family-run business from Alexandria specializing in LEGO-style building sets, dolls, board games, RC cars. Every item is checked before shipping."
+ },
+ {
+  "seller_id": "S0099",
+  "store_name": "Lotus Store",
+  "categories": [
+   "grocery"
+  ],
+  "governorate": "Giza",
+  "joined": "2020-12-26",
+  "plan": "Individual",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 3.9,
+  "rating_count": 16232,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.05,
+   "late_shipment": 0.0,
+   "cancel": 1.2,
+   "valid_tracking": 100.0,
+   "response_24h": 97.7
+  },
+  "new_seller": false,
+  "description": "Lotus Store has served customers in Giza since 2020. We focus on coffee, snacks, rice, cooking oil, cleaning supplies at fair prices."
+ },
+ {
+  "seller_id": "S0100",
+  "store_name": "Lotus Wellness",
+  "categories": [
+   "health"
+  ],
+  "governorate": "Alexandria",
+  "joined": "2021-11-20",
+  "plan": "Professional",
+  "fulfillment": "FBZ",
+  "tier": "Standard",
+  "rating": 4.2,
+  "rating_count": 8898,
+  "handling_days": null,
+  "cod": true,
+  "return_overrides": {},
+  "change_of_mind_shipping": "buyer pays",
+  "store_warranty_months": 0,
+  "ships_zone_d": true,
+  "shipping_fees": null,
+  "free_shipping_over": null,
+  "policy_conflict": false,
+  "metrics": {
+   "odr": 0.54,
+   "late_shipment": 0.0,
+   "cancel": 1.0,
+   "valid_tracking": 100.0,
+   "response_24h": 89.0
+  },
+  "new_seller": false,
+  "description": "Lotus Wellness is a health & nutrition store based in Alexandria, selling vitamins, protein powder, blood pressure monitors."
+ }
+]
