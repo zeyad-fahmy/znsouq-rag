@@ -29,8 +29,10 @@ with st.sidebar:
         st.caption(f"• {ex}")
 
 
-def render_sources(sources):
+def render_sources(sources, search_query=None):
     with st.expander(f"Sources ({len(sources)})"):
+        if search_query:
+            st.caption(f"Searched for: {search_query}")
         for i, h in enumerate(sources, 1):
             m = h["metadata"]
             st.markdown(f"**[{i}]** `{m['source']}` › {m['section']}  —  score {h['score']}")
@@ -49,10 +51,12 @@ for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if show_sources and msg.get("sources"):
-            render_sources(msg["sources"])
+            render_sources(msg["sources"], msg.get("search_query"))
 
 # ---------- New question ----------
 if question := st.chat_input("Ask a question about ZNSouq..."):
+    # The last few messages BEFORE this question = the conversation memory
+    history = [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages[-6:]]
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
         st.markdown(question)
@@ -60,12 +64,13 @@ if question := st.chat_input("Ask a question about ZNSouq..."):
     with st.chat_message("assistant"):
         with st.spinner("Searching the help center..."):
             try:
-                result = answer(question, mode=mode, k=k)
-                reply, sources = result["answer"], result["sources"]
+                result = answer(question, mode=mode, k=k, history=history)
+                reply, sources, search_query = result["answer"], result["sources"], result.get("search_query")
             except Exception as e:
-                reply, sources = f"Sorry, something went wrong: `{e}`", []
+                reply, sources, search_query = f"Sorry, something went wrong: `{e}`", [], None
         st.markdown(reply)
         if show_sources and sources:
-            render_sources(sources)
+            render_sources(sources, search_query)
 
-    st.session_state.messages.append({"role": "assistant", "content": reply, "sources": sources})
+    st.session_state.messages.append({"role": "assistant", "content": reply,
+                                      "sources": sources, "search_query": search_query})

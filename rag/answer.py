@@ -131,7 +131,14 @@ def answer(question: str, mode: str = "buyer", k: int = 4, history=None):
     hits, seller_id, search_query = gather_context(question, mode, k, history)
     system = SYSTEM.format(audience="buyers" if mode == "buyer" else "sellers",
                            today=date.today().isoformat(), contact=CONTACT[mode])
-    user = f"<context>\n{format_context(hits)}\n</context>\n\nQuestion: {question}"
+    user = f"<context>\n{format_context(hits)}\n</context>\n\n"
+    if history:
+        # Give Claude the recent conversation so follow-ups like "and for women's fashion?" make sense
+        convo = "\n".join(f"{m['role']}: {m['content'][:400]}" for m in history[-4:])
+        user += (f"<conversation>\n{convo}\n</conversation>\n\n"
+                 f"Latest question: {question}\n(Standalone version: {search_query})")
+    else:
+        user += f"Question: {question}"
     response = client().messages.create(
         model=MODEL,
         max_tokens=3000,
