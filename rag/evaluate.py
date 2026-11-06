@@ -20,13 +20,15 @@ JUDGE_PROMPT = """You are grading a customer-support chatbot for a fictional mar
 
 Question: {question}
 
-Expected answer (ground truth): {expected}
+Expected answer (must include these facts): {expected}
+
+Optional extra details (NOT required; never FAIL an answer for leaving these out): {nice}
 
 Chatbot answer: {answer}
 
 Grade the chatbot answer:
-- PASS if it gives the key facts of the expected answer correctly and states nothing that contradicts it.
-- FAIL if a key fact is missing or wrong, or it invents facts not supported by the expected answer.
+- PASS if it gives the must-include facts correctly and states nothing that contradicts the expected answer or the optional details.
+- FAIL if a must-include fact is missing or wrong, or it states something false.
 Extra correct detail is fine. Wording does not matter.
 
 Reply with JSON only: {{"verdict": "PASS" or "FAIL", "reason": "<one short sentence>"}}"""
@@ -34,12 +36,12 @@ Reply with JSON only: {{"verdict": "PASS" or "FAIL", "reason": "<one short sente
 client = anthropic.Anthropic()
 
 
-def judge(question, expected, bot_answer):
+def judge(question, expected, bot_answer, nice=""):
     msg = client.messages.create(
         model=MODEL,
         max_tokens=200,
         messages=[{"role": "user", "content": JUDGE_PROMPT.format(
-            question=question, expected=expected, answer=bot_answer)}],
+            question=question, expected=expected, nice=nice or "(none)", answer=bot_answer)}],
     )
     text = msg.content[0].text
     match = re.search(r"\{.*\}", text, re.DOTALL)        # find the JSON even if extra text appears
@@ -64,14 +66,16 @@ def main():
     for q in questions:
         mode = "seller" if q["audience"] == "seller" else "buyer"
         r = answer(q["question"], mode=mode)
-        grade = judge(q["question"], q["expected_answer"], r["answer"])
+        grade = judge(q["question"], q["expected_answer"], r["answer"], q.get("nice_to_have", ""))
         hit = retrieval_hit(q["sources"], r["sources"])
         results.append({**q, "mode": mode, "bot_answer": r["answer"], "retrieval_hit": hit,
+                        "search_query": r.get("search_query"),
                         "retrieved": [h["metadata"]["source"] for h in r["sources"]], **grade})
         mark = "✅" if grade["verdict"] == "PASS" else "❌"
         print(f"{mark} {q['id']} [{q['type']}] {q['question'][:70]}")
         if grade["verdict"] != "PASS":
             print(f"     ↳ {grade['reason']}  | retrieval hit: {hit}")
+            print(f"     ↳ search query used: {r.get('search_query')}")
 
     # ---- Summary
     passed = sum(r["verdict"] == "PASS" for r in results)
