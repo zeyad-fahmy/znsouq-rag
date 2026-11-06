@@ -9,11 +9,11 @@ EMBED_MODEL = "BAAI/bge-small-en-v1.5"      # 384 dimensions, runs locally, free
 COLLECTION = "znsouq_docs_bge_small"       # named after the model (one model per index!)
 
 
-def get_collection():
+def get_collection(name=COLLECTION):
     client = chromadb.PersistentClient(path=str(DB_DIR))
     embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBED_MODEL)
     return client.get_or_create_collection(
-        name=COLLECTION,
+        name=name,
         embedding_function=embed_fn,
         metadata={"hnsw:space": "cosine"},   # use cosine similarity
     )

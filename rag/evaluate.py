@@ -13,8 +13,8 @@ import anthropic
 from rag.answer import MODEL, answer
 from rag.loader import DATA_DIR
 
-# Types we can answer with the current index (products/reviews come in step 7, orders in step 9)
-SKIP_TYPES = {"product", "reviews", "needs_tool"}
+# Order status needs live data (order-lookup tool, step 4); everything else can be answered now
+SKIP_TYPES = {"needs_tool"}
 
 JUDGE_PROMPT = """You are grading a customer-support chatbot for a fictional marketplace.
 
@@ -56,7 +56,7 @@ def retrieval_hit(expected_sources, hits):
     if not expected_sources:
         return None                                       # nothing to retrieve (out-of-scope questions)
     retrieved = [h["metadata"]["source"] for h in hits]
-    return any(r.startswith(e.split("#")[0]) for e in expected_sources for r in retrieved)
+    return any(r.startswith(e) for e in expected_sources for r in retrieved)   # exact doc (or product) match
 
 
 def main():
@@ -69,13 +69,13 @@ def main():
         grade = judge(q["question"], q["expected_answer"], r["answer"], q.get("nice_to_have", ""))
         hit = retrieval_hit(q["sources"], r["sources"])
         results.append({**q, "mode": mode, "bot_answer": r["answer"], "retrieval_hit": hit,
-                        "search_query": r.get("search_query"),
+                        "search_query": r.get("search_query"), "routes": r.get("routes"),
                         "retrieved": [h["metadata"]["source"] for h in r["sources"]], **grade})
         mark = "✅" if grade["verdict"] == "PASS" else "❌"
         print(f"{mark} {q['id']} [{q['type']}] {q['question'][:70]}")
         if grade["verdict"] != "PASS":
             print(f"     ↳ {grade['reason']}  | retrieval hit: {hit}")
-            print(f"     ↳ search query used: {r.get('search_query')}")
+            print(f"     ↳ search query used: {r.get('search_query')}  | routes: {r.get('routes')}")
 
     # ---- Summary
     passed = sum(r["verdict"] == "PASS" for r in results)

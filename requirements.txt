@@ -4,3 +4,4 @@ sentence-transformers
 python-dotenv
 streamlit
 ipykernel
+rank-bm25

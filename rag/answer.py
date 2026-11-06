@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 
 from rag.loader import DATA_DIR
 from rag.retrieve import retrieve
+from rag.catalog import hybrid_search, reviews_for
 
 load_dotenv()
 MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
@@ -37,29 +38,45 @@ def detect_seller(question: str):
     return m.group(0) if m else None
 
 
-# ---------- 2. Query rewriting ----------
-REWRITE_PROMPT = """Rewrite the user's latest message as one standalone search query for ZNSouq's {audience} help center.
+# ---------- 2. Query rewriting + routing ----------
+REWRITE_PROMPT = """You prepare searches for ZNSouq's {audience} support assistant.
+
+1. Rewrite the user's latest message as one standalone search query.
 - Keep every specific word from the message (products, categories, store names, numbers, dates), then ADD the words a help article would use (e.g. "get paid" for a seller -> "get paid seller payout schedule"; "stale coffee" -> "stale coffee grocery return").
 - If earlier messages are given, resolve references like "it", "that" or "and for X?".
-- Keep store names, product names and numbers exactly as written.
-Output only the query, nothing else.
+
+2. Choose which knowledge sources are needed (one or more):
+- "policies": rules, fees, delivery, returns, refunds, payments, accounts, sellers' store policies
+- "products": a specific product's details, price, sellers offering it, what's in the box, warranty, stock
+- "reviews": what customers say or think about a product, its quality or rating
+
+Reply with JSON only: {{"query": "...", "sources": ["policies"]}}
 
 {history}Latest message: {question}"""
 
+ALL_SOURCES = {"policies", "products", "reviews"}
+
 
 def rewrite_query(question: str, mode: str = "buyer", history=None):
-    """Use Claude to turn a short or vague question into a clear search query."""
+    """Use Claude to (1) turn the question into a clear search query and (2) pick the sources to search."""
     hist = ""
     if history:
         lines = [f"{m['role']}: {m['content'][:300]}" for m in history[-4:]]   # last 4 messages is enough
         hist = "Earlier messages:\n" + "\n".join(lines) + "\n\n"
     msg = client().messages.create(
         model=MODEL,
-        max_tokens=100,
+        max_tokens=150,
         messages=[{"role": "user", "content": REWRITE_PROMPT.format(
             audience="buyer" if mode == "buyer" else "seller", history=hist, question=question)}],
     )
-    return msg.content[0].text.strip()
+    text = msg.content[0].text.strip()
+    try:
+        data = json.loads(re.search(r"\{.*\}", text, re.DOTALL).group(0))
+        query = str(data.get("query") or question)
+        sources = [s for s in data.get("sources", []) if s in ALL_SOURCES] or ["policies"]
+    except (AttributeError, json.JSONDecodeError):
+        query, sources = text or question, ["policies"]     # if the JSON is broken, fall back safely
+    return query, sources
 
 
 # ---------- 3. Retrieval with filters ----------
@@ -91,13 +108,23 @@ def search(question, search_query, k, where, extra=2):
 
 
 def gather_context(question: str, mode: str = "buyer", k: int = 4, history=None):
-    """Retrieve platform chunks, plus the store's own chunks if a store is mentioned."""
-    search_query = rewrite_query(question, mode, history)
-    hits = search(question, search_query, k, platform_filter(mode))
-    seller_id = detect_seller(question + " " + search_query) if mode == "buyer" else None
-    if seller_id:
-        hits = search(question, search_query, 3, {"seller_id": seller_id}, extra=1) + hits
-    return hits, seller_id, search_query
+    """Route the question, then retrieve from the chosen sources:
+    policies (platform docs + the store's page if a store is named), products, reviews."""
+    search_query, sources = rewrite_query(question, mode, history)
+    hits, seller_id = [], None
+    if "policies" in sources:
+        hits = search(question, search_query, k, platform_filter(mode))
+        seller_id = detect_seller(question + " " + search_query) if mode == "buyer" else None
+        if seller_id:
+            hits = search(question, search_query, 3, {"seller_id": seller_id}, extra=1) + hits
+    if "products" in sources or "reviews" in sources:
+        product_hits = hybrid_search(question, search_query, k=4, types=["product"])
+        if "products" in sources:
+            hits += product_hits
+        if "reviews" in sources and product_hits:
+            # step 2: reviews of the best-matching product, looked up by its product_id
+            hits += reviews_for(product_hits[0]["metadata"]["product_id"])
+    return hits, seller_id, search_query, sources
 
 
 # ---------- 4. Prompt ----------
@@ -111,8 +138,9 @@ Rules:
 4. When a rule depends on a date (e.g. fee changes), compare it with today's date.
 5. When a passage contains a table, find the row that exactly matches the question (e.g. 3 kg fits "up to 5 kg", not "up to 1 kg") and copy its numbers exactly. Work this out before writing; never correct yourself mid-answer.
 6. If passages describe different steps or waiting times, explain them in order ("first..., then...") instead of picking one.
-7. Cite the passages you used like [1] or [2][3] right after the relevant sentence.
-8. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
+7. Product passages list every seller's offer: when asked about price or sellers, compare all offers and mention stock and condition. Review passages are customer opinions: summarize the common points (good and bad) with the average rating and number of reviews, never present one opinion as a fact, and never invent reviews. If a product isn't in the passages, say you couldn't find it.
+8. Cite the passages you used like [1] or [2][3] right after the relevant sentence.
+9. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
 
 CONTACT = {"buyer": "00001 (demo number) or help@znsouq.example",
            "seller": "00002 (demo number) or sellers@znsouq.example"}
@@ -128,7 +156,7 @@ def format_context(hits):
 
 # ---------- 5. Ask Claude ----------
 def answer(question: str, mode: str = "buyer", k: int = 4, history=None):
-    hits, seller_id, search_query = gather_context(question, mode, k, history)
+    hits, seller_id, search_query, sources = gather_context(question, mode, k, history)
     system = SYSTEM.format(audience="buyers" if mode == "buyer" else "sellers",
                            today=date.today().isoformat(), contact=CONTACT[mode])
     user = f"<context>\n{format_context(hits)}\n</context>\n\n"
@@ -149,4 +177,4 @@ def answer(question: str, mode: str = "buyer", k: int = 4, history=None):
     # With thinking on, the reply has a "thinking" block first and the answer in a "text" block
     text = "".join(b.text for b in response.content if b.type == "text")
     return {"answer": text, "sources": hits,
-            "seller_id": seller_id, "search_query": search_query}
+            "seller_id": seller_id, "search_query": search_query, "routes": sources}
