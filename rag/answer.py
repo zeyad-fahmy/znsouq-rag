@@ -70,7 +70,7 @@ def rewrite_query(question: str, mode: str = "buyer", history=None):
         messages=[{"role": "user", "content": REWRITE_PROMPT.format(
             audience="buyer" if mode == "buyer" else "seller", history=hist, question=question)}],
     )
-    text = "".join(b.text for b in msg.content if b.type == "text").strip()
+    text = "".join(b.text for b in msg.content if b.type == "text").strip()   # skip thinking blocks
     try:
         data = json.loads(re.search(r"\{.*\}", text, re.DOTALL).group(0))
         query = str(data.get("query") or question)
@@ -139,10 +139,11 @@ Rules:
 4. When a rule depends on a date (e.g. fee changes), compare it with today's date.
 5. When a passage contains a table, find the row that exactly matches the question (e.g. 3 kg fits "up to 5 kg", not "up to 1 kg") and copy its numbers exactly. Work this out before writing; never correct yourself mid-answer.
 6. If passages describe different steps or waiting times, explain them in order ("first..., then...") instead of picking one.
-7. Product passages list every seller's offer: when asked about price or sellers, compare all offers and mention stock and condition. Review passages are customer opinions: summarize the common points (good and bad) with the average rating and number of reviews, never present one opinion as a fact, and never invent reviews. If a product isn't in the passages, say you couldn't find it.
-8. Cite the passages you used like [1] or [2][3] right after the relevant sentence.
-9. Orders: if the customer asks about a specific order, call the lookup_order tool with the order number (format ZN-12345678). If they didn't give an order number, ask for it. Report only what the tool returns and never guess an order's status. If the order is late, add what the passages say they can do (for example a ZNSouq Guarantee claim).
-10. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
+7. Keep the conditions attached to every rule, fee or deadline: who or what it applies to (e.g. "for FBZ items only", "not for Plus members", "within 7 days of delivery"). Never state a conditional rule as if it always applies.
+8. Product passages list every seller's offer: when asked about price or sellers, compare all offers and mention stock and condition. Review passages are customer opinions: summarize the common points (good and bad) with the average rating and number of reviews. When reviews disagree about something (e.g. one says the GPS works, another says it doesn't), say opinions are mixed instead of stating either side as fact. Never invent reviews. If a product isn't in the passages, say you couldn't find it.
+9. Cite the passages you used like [1] or [2][3] right after the relevant sentence.
+10. Orders: if the customer asks about a specific order, call the lookup_order tool with the order number (format ZN-12345678). If they didn't give an order number, ask for it. Report only what the tool returns and never guess an order's status. If the order is late, add what the passages say they can do (for example a ZNSouq Guarantee claim).
+11. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
 
 CONTACT = {"buyer": "00001 (demo number) or help@znsouq.example",
            "seller": "00002 (demo number) or sellers@znsouq.example"}

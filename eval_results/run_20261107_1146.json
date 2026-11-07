@@ -1,0 +1,1373 @@
+[
+  {
+    "id": "Q001",
+    "question": "Can I return a shirt I already washed?",
+    "expected_answer": "No. Men's and Women's Fashion change-of-mind returns require the item to be unworn, unwashed and with original tags attached (30-day window). Defective items are still returnable.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/returns-by-category/fashion-men.md",
+      "platform/buyer/returns-policy.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "No, you can't return a washed shirt for a change of mind. Men's Fashion items (including shirts) can only be returned for change of mind if they're unworn, unwashed, and have original tags attached. [4][5]\n\nHowever, if the shirt is defective or damaged, you can return it within 30 days of delivery for a full refund including delivery fees, regardless of whether it's been washed. [3][4] In that case, report damaged or wrong items within 7 days of delivery, or report defects any time within the 30-day return window. [4]\n\nIf you have a defective shirt, contact customer service at 00001 or help@znsouq.example to start a return.",
+    "retrieval_hit": true,
+    "search_query": "return washed shirt clothing return policy eligibility",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/returns-by-category/fashion-men.md",
+      "platform/buyer/returns-by-category/fashion-women.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/fashion-men.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/fashion-women.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts: unworn/unwashed/tags, 30-day window, defective items still returnable, matches passages."
+  },
+  {
+    "id": "Q002",
+    "question": "How much is the cash on delivery fee?",
+    "expected_answer": "15 EGP per shipment; free for Plus members.",
+    "nice_to_have": "COD is available for orders up to 20,000 EGP.",
+    "sources": [
+      "platform/buyer/cash-on-delivery.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "The cash on delivery fee is 15 EGP per shipment [1]. However, if you're a Plus member, you don't pay this fee [1].",
+    "retrieval_hit": true,
+    "search_query": "cash on delivery fee cost price",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/cash-on-delivery.md",
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/delivery-by-governorate/port-said.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 15 EGP per shipment fee and free for Plus members, matching expected answer and supported by passage [1]."
+  },
+  {
+    "id": "Q003",
+    "question": "What is the minimum order for free shipping?",
+    "expected_answer": "500 EGP of Fulfilled by ZNSouq items, standard delivery, Zones A-C only.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/free-shipping.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "The minimum order for free standard delivery is **500 EGP** (after discounts, before delivery fee) for Fulfilled by ZNSouq items, **and** your delivery address must be in Zone A, B, or C [1].\n\nHowever, if you're a Plus member, you get free standard delivery on all Fulfilled by ZNSouq orders with **no minimum**, in all zones including Zone D [1].\n\nNote that free shipping doesn't apply to seller-fulfilled items or large and bulky items, which have their own fees [1].",
+    "retrieval_hit": true,
+    "search_query": "minimum order free shipping threshold requirement",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/free-shipping.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/delivery-by-governorate/minya.md",
+      "platform/buyer/cancelling-an-order.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/placing-an-order.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes 500 EGP FBZ minimum, standard delivery, Zones A-C, matching expected answer and supported by passage 1."
+  },
+  {
+    "id": "Q004",
+    "question": "How much does ZNSouq Plus cost per year?",
+    "expected_answer": "899 EGP per year.",
+    "nice_to_have": "Monthly plan 99 EGP/month; students 49 EGP/month; 30-day free trial.",
+    "sources": [
+      "platform/buyer/znsouq-plus.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "ZNSouq Plus costs **899 EGP per year** [1]. There's also a monthly option at 99 EGP/month, and if you're a student with a valid university email, you can get it for 49 EGP/month. Plus, new members get a 30-day free trial (one per person, card required) [1].",
+    "retrieval_hit": true,
+    "search_query": "ZNSouq Plus membership cost price per year annual subscription fee",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/znsouq-plus.md",
+      "platform/buyer/installments.md",
+      "platform/buyer/znsouq-plus.md",
+      "platform/buyer/znsouq-guarantee.md",
+      "platform/buyer/znsouq-plus.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 899 EGP/year and includes optional details accurately supported by passage [1]."
+  },
+  {
+    "id": "Q005",
+    "question": "How long does a refund to my card take?",
+    "expected_answer": "5-10 business days after inspection, depending on your bank.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/refunds.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "A refund to your credit or debit card takes **5-10 business days after the item is inspected**, depending on your bank. [4] If you have a Meeza card, the timing is the same: 5-10 business days after inspection. [4]\n\nIf 10 business days have passed since the refund date shown in your order and it still hasn't appeared, contact customer service with your refund reference number (format RF-XXXXXXXX) so your bank can trace it. [1]",
+    "retrieval_hit": true,
+    "search_query": "refund to card how long processing time payment method",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/refunds.md",
+      "platform/buyer/znsouq-wallet.md",
+      "platform/buyer/installments.md",
+      "platform/buyer/refunds.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes required fact (5-10 business days after inspection, depending on bank) and adds only passage-supported details."
+  },
+  {
+    "id": "Q006",
+    "question": "My order hasn't arrived. When can I file a ZNSouq Guarantee claim?",
+    "expected_answer": "3 days after the latest estimated delivery date, and within 90 days of it. Contact the seller first and wait 2 business days.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/znsouq-guarantee.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Based on our buyer protection policy, here's the timeline [3][2][1]:\n\nFirst, you should contact the seller through Orders > Contact seller and wait 2 business days for a reply [3].\n\nYou can file a ZNSouq Guarantee claim for \"Item not received\" once your order hasn't arrived **3 days after the latest estimated delivery date** [2][3].\n\nYou have up to **90 days** from the latest estimated delivery date to submit your claim [1].\n\nOnce you file, the seller has 48 hours to respond, and ZNSouq will usually decide within 5 business days [1].\n\nDo you have your order number? I can look it up to check your estimated delivery date and help you figure out exactly when you'll be eligible to file.",
+    "retrieval_hit": true,
+    "search_query": "order hasn't arrived file ZNSouq Guarantee claim deadline timeline",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/znsouq-guarantee.md",
+      "platform/buyer/znsouq-guarantee.md",
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/warranty-claims.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts: 3 days after delivery date, 90-day window, contact seller first, wait 2 business days, all supported by passages."
+  },
+  {
+    "id": "Q007",
+    "question": "What's the minimum order to pay in installments?",
+    "expected_answer": "1,500 EGP.",
+    "nice_to_have": "Installments are through ZNPay; 6 months is 0% interest on orders of 3,000 EGP or more.",
+    "sources": [
+      "platform/buyer/installments.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "The minimum order to pay in installments is 1,500 EGP. [1] Installments are available through ZNPay on orders at or above that amount.",
+    "retrieval_hit": true,
+    "search_query": "minimum order amount installment payment plan eligibility requirements",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/installments.md",
+      "platform/buyer/installments.md",
+      "platform/buyer/installments.md",
+      "platform/buyer/cancelling-an-order.md",
+      "platform/buyer/creating-an-account.md",
+      "platform/buyer/creating-an-account.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states the minimum order of 1,500 EGP via ZNPay, matching the expected answer and passage [1]."
+  },
+  {
+    "id": "Q008",
+    "question": "How long are gift cards valid?",
+    "expected_answer": "3 years from the date of purchase.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/gift-cards.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "Gift cards are valid for 3 years from the date of purchase. [1]",
+    "retrieval_hit": true,
+    "search_query": "gift card validity expiration how long valid",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/gift-cards.md",
+      "platform/buyer/znsouq-wallet.md",
+      "platform/buyer/refunds.md",
+      "platform/buyer/znsouq-wallet.md",
+      "platform/buyer/creating-an-account.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States the required fact of 3 years from purchase, matching passage [1] with no contradictions."
+  },
+  {
+    "id": "Q009",
+    "question": "Can I use two coupons on the same order?",
+    "expected_answer": "No, only one coupon per order.",
+    "nice_to_have": "Coupons cannot be combined with Lightning Deals.",
+    "sources": [
+      "platform/buyer/coupons-and-promotions.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "No, you can't. Only one coupon can be used per order. [1]",
+    "retrieval_hit": true,
+    "search_query": "Can I use two coupons on the same order multiple coupons single order coupon policy",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/coupons-and-promotions.md",
+      "platform/buyer/cancelling-an-order.md",
+      "platform/buyer/placing-an-order.md",
+      "platform/buyer/cancelling-an-order.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states only one coupon per order, matching expected answer and supported by passage [1]."
+  },
+  {
+    "id": "Q010",
+    "question": "I received an opened bag of coffee that tastes stale. Can I return it?",
+    "expected_answer": "Grocery items are not returnable for change of mind. Damaged, expired or wrong items must be reported within 48 hours of delivery.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/returns-by-category/grocery.md",
+      "platform/buyer/damaged-defective-wrong-items.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Based on the policy for Grocery items like coffee [3][4], you can return it **if** it qualifies as damaged or defective and you report it within 48 hours of delivery.\n\nThe policy says change-of-mind returns aren't accepted for grocery items. However, damaged, expired, or wrong items can be returned if you report them within 48 hours of delivery [4].\n\nWhether stale coffee counts as \"damaged\" or \"defective\" isn't spelled out in the policy, so I'd recommend contacting customer service right away at 00001 (demo) or help@znsouq.example to report the issue and ask if it qualifies—especially since you're still within the 48-hour reporting window. They can help you process a return if it's eligible.",
+    "retrieval_hit": true,
+    "search_query": "stale coffee opened bag return refund grocery",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/returns-by-category/pet-supplies.md",
+      "platform/buyer/returns-by-category/toys.md",
+      "platform/buyer/returns-by-category/grocery.md",
+      "platform/buyer/returns-by-category/grocery.md",
+      "platform/buyer/returns-by-category/kids-baby.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States grocery items aren't returnable for change of mind and damaged/expired/wrong items must be reported within 48 hours, matching expected facts."
+  },
+  {
+    "id": "Q011",
+    "question": "Someone called me from ZNSouq asking for my OTP. Is that normal?",
+    "expected_answer": "No. ZNSouq never asks for passwords or OTP codes and only calls from 00001 (demo number). It's a scam.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/account-security-and-scams.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "**No, this is definitely not normal—it's a scam.** [1]\n\nZNSouq will **never** ask for your password, OTP code, or full card number by phone, SMS, WhatsApp, or email. Ever.\n\nAlso, ZNSouq customer service only calls from **00001 (demo number)**. Any other number claiming to be ZNSouq is a scam. [1]\n\n**What you should do:**\n- Don't give them your OTP or any other personal info\n- Change your password immediately [1]\n- Contact ZNSouq customer service to report the scam:\n  - Phone: 00001, daily 9:00 AM - 11:00 PM (Cairo time)\n  - Email: help@znsouq.example\n  - Or live chat in the app/website [4]\n\nStay safe, and don't trust callers asking for sensitive info!",
+    "retrieval_hit": true,
+    "search_query": "OTP security phone call ZNSouq legitimate verify account",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/account-security-and-scams.md",
+      "platform/buyer/contacting-a-seller.md",
+      "platform/buyer/about-znsouq.md",
+      "platform/buyer/contact-customer-service.md",
+      "platform/buyer/report-a-counterfeit-item.md",
+      "platform/buyer/znsouq-guarantee.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts: it's a scam, ZNSouq never asks for OTP/password, and only calls from 00001."
+  },
+  {
+    "id": "Q012",
+    "question": "How long does delivery to Luxor take and how much does it cost?",
+    "expected_answer": "Luxor is Zone C: standard 3-5 business days for 55 EGP (FBZ items); express 2 days (110 EGP).",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/delivery-by-governorate/luxor.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Delivery to Luxor depends on the option you choose [1]:\n\n**Standard delivery** (Fulfilled by ZNSouq): 3-5 business days, 55 EGP. However, it's free if your order is 500 EGP or more [1].\n\n**Express delivery**: 2 days, 110 EGP [1].\n\nFor **large and bulky items** (like refrigerators or washing machines), it's 150 EGP and takes 3-7 business days [1].\n\nNote that business days are Saturday to Thursday, so Friday is not counted [5].\n\nIf your items are seller-fulfilled rather than Fulfilled by ZNSouq, add 1-3 business days for the seller's handling time, and the seller sets their own shipping fees [1].",
+    "retrieval_hit": true,
+    "search_query": "delivery time cost Luxor shipping fees duration",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/delivery-by-governorate/luxor.md",
+      "platform/buyer/delivery-by-governorate/suez.md",
+      "platform/buyer/delivery-by-governorate/sharqia.md",
+      "platform/buyer/delivery-by-governorate/asyut.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts (3-5 days/55 EGP standard, 2 days/110 EGP express) with accurate supported extra details."
+  },
+  {
+    "id": "Q013",
+    "question": "How long does delivery to North Sinai take and how much does it cost?",
+    "expected_answer": "North Sinai is Zone D: standard 5-8 business days for 85 EGP (FBZ items); no express delivery.",
+    "nice_to_have": "Cash on delivery is not available in North Sinai, and delivery covers Arish only.",
+    "sources": [
+      "platform/buyer/delivery-by-governorate/north-sinai.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Delivery to North Sinai takes **5-8 business days and costs 85 EGP** for standard delivery (Fulfilled by ZNSouq items). [1]\n\nExpress delivery is not available to North Sinai. [1]\n\nIf you're ordering **large and bulky items**, the cost is 300 EGP and delivery takes 3-7 business days. [1]\n\nKeep in mind that if you order seller-fulfilled items, you'll need to add the seller's handling time (usually 1-3 business days) on top of the delivery time, and the seller sets their own shipping fees. [1]\n\nAlso, delivery in North Sinai covers Arish only and may be paused at short notice for security reasons. Cash on delivery is not available. [1]",
+    "retrieval_hit": true,
+    "search_query": "delivery North Sinai cost price how long time",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/delivery-by-governorate/north-sinai.md",
+      "platform/buyer/delivery-by-governorate/south-sinai.md",
+      "platform/buyer/delivery-options-and-fees.md",
+      "platform/buyer/delivery-by-governorate/suez.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes correct Zone D facts (5-8 days, 85 EGP, no express) and extra details all supported by passage [1]."
+  },
+  {
+    "id": "Q014",
+    "question": "How long does delivery to Giza take and how much does it cost?",
+    "expected_answer": "Giza is Zone A: standard 1-2 business days for 30 EGP (FBZ items); express same day if ordered before 12:00 PM, otherwise next day (60 EGP).",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/delivery-by-governorate/giza.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Delivery to Giza depends on which service and item type you choose: [1]\n\n**Standard delivery (Fulfilled by ZNSouq):** 1-2 business days for 30 EGP. This is free if your order is 500 EGP or more.\n\n**Express:** Same day if you order before 12:00 PM, otherwise next day, for 60 EGP.\n\n**Large and bulky items** (like refrigerators or washing machines): 150 EGP, delivered within 3-7 business days.\n\n**Seller-fulfilled items:** Add the seller's handling time (usually 1-3 business days) to the transit times above; shipping fees are set by the seller.\n\nNote that business days are Saturday to Thursday—Friday and public holidays don't count. [3]",
+    "retrieval_hit": true,
+    "search_query": "delivery to Giza how long does it take shipping cost price",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/delivery-by-governorate/giza.md",
+      "platform/buyer/delivery-by-governorate/cairo.md",
+      "platform/buyer/delivery-options-and-fees.md",
+      "platform/buyer/delivery-by-governorate/gharbia.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes correct Zone A facts: standard 1-2 days/30 EGP and express same-day/next-day for 60 EGP, with supported extra details."
+  },
+  {
+    "id": "Q015",
+    "question": "How long does delivery to Matrouh take and how much does it cost?",
+    "expected_answer": "Matrouh is Zone D: standard 5-8 business days for 85 EGP (FBZ items); no express delivery.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/delivery-by-governorate/matrouh.md",
+      "platform/buyer/delivery-options-and-fees.md"
+    ],
+    "type": "fact",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Delivery to Matrouh takes **5-8 business days and costs 85 EGP** for standard delivery (Fulfilled by ZNSouq). Express delivery is not available in Matrouh. [1]\n\nHowever, if you're a Plus member, you get free standard delivery on FBZ items. For regular orders, the free delivery threshold doesn't apply in Zone D (where Matrouh is located). [1]\n\nIf you're ordering large or bulky items, those cost 300 EGP and take 3-7 business days. [1]",
+    "retrieval_hit": true,
+    "search_query": "delivery to Matrouh how long does it take shipping cost price",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/delivery-by-governorate/matrouh.md",
+      "platform/buyer/delivery-by-governorate/dakahlia.md",
+      "platform/buyer/delivery-by-governorate/port-said.md",
+      "platform/buyer/delivery-by-governorate/faiyum.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes Zone D, 5-8 days, 85 EGP, no express, and extra supported details without contradictions."
+  },
+  {
+    "id": "Q016",
+    "question": "When do sellers get paid?",
+    "expected_answer": "Every Tuesday, for orders delivered at least 7 days ago (14 days for new sellers in their first 90 days). Minimum payout 100 EGP.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/payouts.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "Payouts are sent every **Tuesday** to your registered Egyptian bank account, and bank transfers usually arrive **1-2 business days after** the payout date [5].\n\nHowever, your order funds don't become available immediately. They're held in a reserve period that lasts **7 days after delivery** for most sellers. If you're a new seller (within your first 90 days after your first sale), the reserve period is **14 days after delivery** instead [5].\n\nAlso keep in mind: the **minimum payout amount is 100 EGP**. If your balance is below this, it rolls over to the next payout. And payouts may be held if your account is under review, suspended, or if you have open ZNSouq Guarantee claims exceeding your available balance [5][6].\n\nIf you change your bank account details, payouts are paused for 3 business days for security verification [5].",
+    "retrieval_hit": true,
+    "search_query": "when do sellers get paid seller payout schedule payment timing",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/selling-plans.md",
+      "platform/seller/fees-by-category/books.md",
+      "platform/seller/fees-by-category/beauty.md",
+      "platform/seller/fees-by-category/sports.md",
+      "platform/seller/payouts.md",
+      "platform/seller/payouts.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts: weekly Tuesday payout, 7-day (14-day new seller) reserve, 100 EGP minimum, no contradictions."
+  },
+  {
+    "id": "Q017",
+    "question": "What Order Defect Rate do I need to keep?",
+    "expected_answer": "Below 1.0%.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/account-health.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "You need to keep your Order Defect Rate (ODR) **below 1.0%** [4].\n\nYour ODR measures orders with negative feedback (1-2 stars), a ZNSouq Guarantee claim, or a chargeback. It's calculated over a rolling 60-day window, so this is your ongoing target to maintain good account health [4].",
+    "retrieval_hit": true,
+    "search_query": "Order Defect Rate threshold requirement seller performance metrics",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/listing-policy.md",
+      "platform/seller/store-policies-what-sellers-can-set.md",
+      "platform/seller/store-policies-what-sellers-can-set.md",
+      "platform/seller/account-health.md",
+      "platform/seller/seller-tiers.md",
+      "platform/seller/fbn-fees.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States ODR must be below 1.0%, matching expected answer, with correct supporting details from passage [4]."
+  },
+  {
+    "id": "Q018",
+    "question": "How long do I have to appeal an account suspension?",
+    "expected_answer": "14 days from the suspension notice, by submitting a Plan of Action; review takes 3-5 business days.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/suspension-and-appeals.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "You have **14 days** from the suspension notice to submit a Plan of Action in Seller Center > Account Health > Appeal [1]. \n\nYour Plan of Action must explain the root cause, what you did to fix it, and what you changed to prevent it happening again. If you miss the 14-day deadline, the suspension becomes permanent deactivation and cannot be appealed [1].\n\nZNSouq will review your appeal within 3–5 business days, and you can submit up to 3 appeals per suspension [1].",
+    "retrieval_hit": true,
+    "search_query": "appeal account suspension deadline time limit seller",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/suspension-and-appeals.md",
+      "platform/seller/suspension-and-appeals.md",
+      "platform/seller/suspension-and-appeals.md",
+      "platform/seller/account-health.md"
+    ],
+    "verdict": "PASS",
+    "reason": "All required facts (14 days, Plan of Action, 3-5 business day review) are correct and supported by the passages."
+  },
+  {
+    "id": "Q019",
+    "question": "What does the Professional plan cost?",
+    "expected_answer": "399 EGP per month (+14% VAT), with no per-item closing fee.",
+    "nice_to_have": "The Individual plan has no monthly fee but charges 10 EGP per item sold.",
+    "sources": [
+      "platform/seller/selling-plans.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "The Professional plan costs **399 EGP per month** [1]. This is before 14% VAT, which is added to all ZNSouq fees [2], so your actual monthly cost would be around 454.86 EGP including VAT.\n\nOn the Professional plan, you also pay no per-item closing fees (unlike the Individual plan's 10 EGP per item), plus referral fees still apply. The plan includes advertising, bulk listing tools, reports and Buy Box eligibility [1].",
+    "retrieval_hit": true,
+    "search_query": "Professional plan cost price seller subscription",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/selling-plans.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/buy-box.md",
+      "platform/seller/start-selling-on-znsouq.md",
+      "platform/seller/fees-overview.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes 399 EGP/month, +14% VAT, and no per-item closing fee, matching expected answer and passages."
+  },
+  {
+    "id": "Q020",
+    "question": "What is the FBZ fulfillment fee for a 3 kg item?",
+    "expected_answer": "Standard large tier (up to 5 kg): 45 EGP per unit, plus 14% VAT.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/fbn-fees.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "medium",
+    "mode": "seller",
+    "bot_answer": "For a 3 kg item, the FBZ fulfillment fee is **45 EGP** [1]. This falls under the \"Standard large\" tier, which covers items up to 5 kg with a maximum size of 45 x 35 x 20 cm.\n\nNote that 14% VAT is added to all ZNSouq fees [5], so the total cost would be higher once VAT is applied.",
+    "retrieval_hit": true,
+    "search_query": "FBZ fulfillment fee 3 kg item seller cost",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fbn-overview.md",
+      "platform/seller/fbn-overview.md",
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/fbn-fees.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States 45 EGP, Standard large tier up to 5 kg, and mentions 14% VAT applies, matching expected answer."
+  },
+  {
+    "id": "Q021",
+    "question": "Do I need approval to sell mobile phones?",
+    "expected_answer": "Yes. Mobile Phones & Tablets is a gated category that needs approval: proof of authorized distribution and NTRA type approval per model.",
+    "nice_to_have": "You must be on the Professional plan to apply; accessories (cases, chargers) don't need approval.",
+    "sources": [
+      "platform/seller/gated-categories.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "Yes, you need approval to sell mobile phones on ZNSouq. Mobile Phones & Tablets is a gated category [3][4].\n\nTo get approval, you'll need to provide [1]:\n- Proof of authorized distribution (an invoice from the brand or an authorized distributor from within the last 180 days)\n- NTRA type approval for every device model you want to sell\n\nNote that accessories like cases and chargers don't need approval [1].",
+    "retrieval_hit": true,
+    "search_query": "do I need approval to sell mobile phones seller requirements restrictions",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/gated-categories.md",
+      "platform/seller/listing-policy.md",
+      "platform/seller/gated-categories.md",
+      "platform/seller/fees-by-category/mobile-phones.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts (gated category, proof of authorized distribution, NTRA type approval) with no contradictions."
+  },
+  {
+    "id": "Q022",
+    "question": "How much is FBZ storage in December?",
+    "expected_answer": "60 EGP per cubic foot per month (October-December peak rate).",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/fbn-fees.md"
+    ],
+    "type": "fact",
+    "audience": "seller",
+    "difficulty": "easy",
+    "mode": "seller",
+    "bot_answer": "In December, FBZ storage is **60 EGP per cubic foot** since December falls in the peak season (October to December) [1]. Keep in mind that 14% VAT is added to this fee [5].\n\nIf your items are stored for more than 180 days, there's also an extra charge of 15 EGP per cubic foot per month, assessed on the 15th of each month [2].",
+    "retrieval_hit": true,
+    "search_query": "FBZ storage fees cost December seller fulfillment",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fbn-fees.md",
+      "platform/seller/fees-overview.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States 60 EGP per cubic foot for October-December peak season, matching expected answer, plus supported extra details."
+  },
+  {
+    "id": "Q023",
+    "question": "What is the referral fee for Electronics?",
+    "expected_answer": "9% for orders placed on or after 2026-11-01 (the current rate, since today is after that date).",
+    "nice_to_have": "Orders placed before 2026-11-01 used the old 8% rate.",
+    "sources": [
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/referral-fee-changes-november-2026.md"
+    ],
+    "type": "temporal",
+    "audience": "seller",
+    "difficulty": "hard",
+    "mode": "seller",
+    "bot_answer": "For Electronics, the referral fee is **9% of the total sale price, with a minimum of 5 EGP per item** [1][4]. \n\nThis applies to orders placed from **2026-11-01 onwards** (based on order date) [1]. Before that date, the fee was 8%.\n\nThe referral fee is calculated on the total sale price, which includes the item price plus any shipping you charge to the buyer [4]. You'll also pay 14% VAT on top of the fee, plus any per-item closing fee (10 EGP for Individual plan only) and FBZ fees if applicable [1].",
+    "retrieval_hit": true,
+    "search_query": "referral fee Electronics category seller",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-by-category/computers.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/fees-by-category/mobile-phones.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States 9% rate for orders from 2026-11-01 onward, matching expected answer, with supported extra details."
+  },
+  {
+    "id": "Q024",
+    "question": "An electronics order was placed on 31 October and shipped on 2 November. Which referral fee applies?",
+    "expected_answer": "The old fee (8%), because the fee is based on the order date, not the shipping date.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/referral-fee-changes-november-2026.md"
+    ],
+    "type": "temporal",
+    "audience": "seller",
+    "difficulty": "hard",
+    "mode": "seller",
+    "bot_answer": "The **8% referral fee** applies to this order.\n\nHere's why: the fee is based on the date the order is placed, not when it ships. Since the order was placed on 31 October 2026 (before the 2 November change), it uses the old fee of 8%, even though it shipped in November [1][2][3].",
+    "retrieval_hit": true,
+    "search_query": "electronics order referral fee seller commission rate",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/referral-fee-changes-november-2026.md",
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-by-category/computers.md",
+      "platform/seller/fees-by-category/mobile-phones.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 8% fee applies based on order date, matching expected answer and supported by passages."
+  },
+  {
+    "id": "Q025",
+    "question": "If I sell a 2000 EGP TV accessory in Electronics on 5 November on the Professional plan, seller-fulfilled, how much are ZNSouq's fees?",
+    "expected_answer": "Referral fee 9% = 180.00 EGP + 14% VAT 25.20 = 205.20 EGP. No closing fee on Professional; no FBZ fees.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/selling-plans.md"
+    ],
+    "type": "calculation",
+    "audience": "seller",
+    "difficulty": "hard",
+    "mode": "seller",
+    "bot_answer": "For a 2,000 EGP Electronics sale on 5 November (which is after the 2026-11-01 fee change), here's what you'll pay:\n\n**Per-sale fees:**\n- Referral fee: 180 EGP (9% of 2,000 EGP, based on the Electronics rate from 2026-11-01 [3])\n- VAT on referral fee: 25.20 EGP (14% of 180 EGP [2][3])\n- **Subtotal per sale: 205.20 EGP**\n\n**Monthly fee:**\n- Professional plan: 399 EGP/month (plus 14% VAT = 55.86 EGP VAT, so 454.86 EGP total per month) [2]\n\nYou won't pay a closing fee—that's only on the Individual plan [2]. Since you're seller-fulfilled, there are no FBZ fees either [1][2].\n\nZNSouq will issue you a monthly tax invoice by the 5th of the following month with all fees and VAT itemized [5].",
+    "retrieval_hit": true,
+    "search_query": "Professional plan seller-fulfilled Electronics category fees commission 2000 EGP TV accessory November ZNSouq charges",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/start-selling-on-znsouq.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/fees-by-category/electronics.md",
+      "platform/seller/fees-by-category/computers.md",
+      "platform/seller/invoices-and-vat.md"
+    ],
+    "verdict": "PASS",
+    "reason": "All required facts (referral fee, VAT, total, no closing fee, no FBZ fees) are correct and supported by passages."
+  },
+  {
+    "id": "Q026",
+    "question": "Is the Professional plan worth it if I sell 60 items a month?",
+    "expected_answer": "Yes: Individual costs 60 x 10 = 600 EGP in closing fees vs 399 EGP for Professional (break-even ~40 items).",
+    "nice_to_have": "",
+    "sources": [
+      "platform/seller/selling-plans.md"
+    ],
+    "type": "calculation",
+    "audience": "seller",
+    "difficulty": "medium",
+    "mode": "seller",
+    "bot_answer": "Yes, the Professional plan is worth it at 60 items per month. [1] The break-even point is around 40 items a month—at that volume, the Professional plan's 399 EGP monthly fee becomes cheaper than Individual's 10 EGP per-item closing fee. \n\nHere's the math: at 60 items, you'd pay 600 EGP in closing fees on Individual (60 × 10 EGP), versus 399 EGP flat on Professional. That's a 201 EGP saving per month before other benefits. [1]\n\nPlus, Professional includes advertising, bulk listing tools, reports and Buy Box eligibility, which Individual doesn't have. [1][2] Both plans charge the same referral fees, and all fees are subject to 14% VAT. [1][4]",
+    "retrieval_hit": true,
+    "search_query": "Professional plan worth 60 items per month seller subscription cost fees benefits",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/seller/selling-plans.md",
+      "platform/seller/buy-box.md",
+      "platform/seller/fees-by-category/health.md",
+      "platform/seller/start-selling-on-znsouq.md",
+      "platform/seller/fees-overview.md",
+      "platform/seller/fees-by-category/beauty.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes correct math (600 vs 399 EGP), break-even ~40 items, and supported extra details without contradictions."
+  },
+  {
+    "id": "Q027",
+    "question": "What is the return window for Mobile Phones & Tablets items bought from Sun Trading?",
+    "expected_answer": "30 days: Sun Trading offers an extended window (ZNSouq minimum is 15 days).",
+    "nice_to_have": "",
+    "sources": [
+      "sellers/S0005",
+      "platform/buyer/returns-by-category/mobile-phones.md"
+    ],
+    "type": "seller_override",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "For Mobile Phones & Tablets items bought from Sun Trading, you have an **extended return window of 30 days from delivery** [2]. This is more generous than the ZNSouq platform minimum of 15 days [4]. Additionally, Sun Trading pays for change-of-mind return shipping [2].\n\nKeep in mind that change-of-mind returns for Mobile Phones & Tablets are only allowed if the device is still factory-sealed [4].",
+    "retrieval_hit": true,
+    "search_query": "return window deadline Mobile Phones Tablets Sun Trading store policy",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0005-sun-trading.md",
+      "sellers/S0005-sun-trading.md",
+      "sellers/S0005-sun-trading.md",
+      "platform/buyer/returns-by-category/mobile-phones.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/electronics.md",
+      "platform/buyer/returns-by-category/computers.md",
+      "platform/buyer/returns-by-category/mobile-phones.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes 30-day window and 15-day platform minimum, with accurate supported extra details, no contradictions."
+  },
+  {
+    "id": "Q028",
+    "question": "What is the return window for Automotive items bought from Sphinx Center?",
+    "expected_answer": "30 days: Sphinx Center offers an extended window (ZNSouq minimum is 15 days).",
+    "nice_to_have": "",
+    "sources": [
+      "sellers/S0006",
+      "platform/buyer/returns-by-category/automotive.md"
+    ],
+    "type": "seller_override",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "The return window for Automotive items from Sphinx Center is **30 days from delivery** [3]. This is more generous than the ZNSouq platform minimum of 15 days [4].\n\nHowever, for change-of-mind returns, the item must be unused and not installed [4]. If the item is damaged, defective, or wrong, you should report it within 7 days of delivery, though you can claim defects any time within the 30-day window [4]. Note that electrical parts once installed cannot be returned unless they're defective or damaged [6].",
+    "retrieval_hit": true,
+    "search_query": "Automotive items return window Sphinx Center store policy",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0006-sphinx-center.md",
+      "sellers/S0006-sphinx-center.md",
+      "sellers/S0006-sphinx-center.md",
+      "platform/buyer/returns-by-category/automotive.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/automotive.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/toys.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States 30-day window and 15-day ZNSouq minimum correctly, with additional supported details, nothing contradictory."
+  },
+  {
+    "id": "Q029",
+    "question": "What is the return window for Mobile Phones & Tablets items bought from Sun Store?",
+    "expected_answer": "45 days: Sun Store offers an extended window (ZNSouq minimum is 15 days).",
+    "nice_to_have": "",
+    "sources": [
+      "sellers/S0007",
+      "platform/buyer/returns-by-category/mobile-phones.md"
+    ],
+    "type": "seller_override",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "For Mobile Phones & Tablets items from Sun Store, the return window is **45 days from delivery** [2]. This is longer than the ZNSouq platform minimum of 15 days [5]. Additionally, Sun Store covers the return shipping cost for change-of-mind returns [2].",
+    "retrieval_hit": true,
+    "search_query": "return window Mobile Phones Tablets Sun Store return policy deadline",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0007-sun-store.md",
+      "sellers/S0007-sun-store.md",
+      "sellers/S0007-sun-store.md",
+      "sellers/S0007-sun-store.md",
+      "platform/buyer/returns-by-category/mobile-phones.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/electronics.md",
+      "platform/buyer/returns-by-category/computers.md",
+      "platform/buyer/returns-by-category/mobile-phones.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 45-day window, cites 15-day ZNSouq minimum, and adds supported detail about return shipping."
+  },
+  {
+    "id": "Q030",
+    "question": "What is the return window at Oasis Hub for Beauty & Personal Care?",
+    "expected_answer": "14 days (ZNSouq standard; this seller does not extend it).",
+    "nice_to_have": "",
+    "sources": [
+      "sellers/S0001",
+      "platform/buyer/returns-by-category/beauty.md"
+    ],
+    "type": "seller_override",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "The return window for Beauty & Personal Care at Oasis Hub is **14 days from delivery** [3]. This matches the ZNSouq platform minimum for this category [6].\n\nKeep in mind that change-of-mind returns for Beauty & Personal Care only apply if the product is sealed and unused [6]. Opened cosmetics, skincare or fragrance cannot be returned unless they're defective, damaged or wrong [5].",
+    "retrieval_hit": true,
+    "search_query": "Oasis Hub Beauty Personal Care return window policy refund",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0001-oasis-hub.md",
+      "sellers/S0001-oasis-hub.md",
+      "sellers/S0001-oasis-hub.md",
+      "sellers/S0001-oasis-hub.md",
+      "platform/buyer/returns-by-category/beauty.md",
+      "platform/buyer/returns-by-category/beauty.md",
+      "platform/buyer/returns-by-category/fashion-women.md",
+      "platform/buyer/returns-by-category/home-kitchen.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-policy.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States 14 days correctly, matches ZNSouq standard, and does not contradict the fact that the seller does not extend it."
+  },
+  {
+    "id": "Q031",
+    "question": "Falcon Deals says they only accept returns within 7 days. I received an item from their Beauty & Personal Care range 10 days ago. Can I still return it?",
+    "expected_answer": "Yes. Sellers cannot be stricter than ZNSouq's rules; the ZNSouq minimum for Beauty & Personal Care is 14 days, so 10 days is still within the return window.",
+    "nice_to_have": "Change-of-mind returns for Beauty & Personal Care are accepted only if the product is sealed and unused.",
+    "sources": [
+      "sellers/S0017",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/beauty.md"
+    ],
+    "type": "conflict",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "Yes, you can still return it! While Falcon Deals' store page says they only accept returns within 7 days [1], the ZNSouq platform rules for Beauty & Personal Care set a minimum return window of 14 days from delivery [5]. The platform rules are the minimum, and sellers cannot be stricter than them—so Falcon Deals' 7-day limit doesn't override the platform's 14-day window [5].\n\nSince you received your item 10 days ago, you're still within the 14-day return window. To return it as a change-of-mind return, the product needs to be sealed and unused [5]. If it's damaged, defective, or wrong, you can report that within 7 days of delivery, or report defects any time within the 14-day window [5].",
+    "retrieval_hit": true,
+    "search_query": "Falcon Deals return policy 7 days Beauty Personal Care item return window deadline",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0017-falcon-deals.md",
+      "sellers/S0017-falcon-deals.md",
+      "sellers/S0017-falcon-deals.md",
+      "sellers/S0017-falcon-deals.md",
+      "platform/buyer/returns-by-category/beauty.md",
+      "platform/buyer/how-to-return-an-item.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/fashion-women.md",
+      "platform/buyer/returns-by-category/home-kitchen.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts correctly and adds supported optional details without contradicting passages."
+  },
+  {
+    "id": "Q032",
+    "question": "Pyramid Electric says they only accept returns within 7 days. I received an item from their Home Appliances range 10 days ago. Can I still return it?",
+    "expected_answer": "Yes. Sellers cannot be stricter than ZNSouq's rules; the ZNSouq minimum for Home Appliances is 15 days, so 10 days is still within the return window.",
+    "nice_to_have": "Change-of-mind returns for Home Appliances are accepted only if unopened and not installed.",
+    "sources": [
+      "sellers/S0052",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/home-appliances.md"
+    ],
+    "type": "conflict",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "Good news! Even though Pyramid Electric's store page says 7 days, their stricter terms don't override ZNSouq's platform rules. For Home Appliances, ZNSouq's minimum return window is 15 days from delivery [4], and sellers can't impose stricter limits than that.\n\nSince you received the item 10 days ago, you're still within the 15-day return window [4]. You can return it if it's unopened and not installed (for a change-of-mind return). If the item is damaged, defective, or wrong, you have up to 7 days from delivery to report it, which you're still within [4].\n\nTo proceed with your return, contact Pyramid Electric through ZNSouq (go to Orders > Contact seller) and they reply within 24 hours on business days [2].",
+    "retrieval_hit": true,
+    "search_query": "Pyramid Electric return policy 7 days Home Appliances return window deadline after purchase",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "sellers/S0052-pyramid-electric.md",
+      "sellers/S0052-pyramid-electric.md",
+      "sellers/S0052-pyramid-electric.md",
+      "platform/buyer/returns-by-category/home-appliances.md",
+      "platform/buyer/returns-by-category/electronics.md",
+      "platform/buyer/returns-by-category/home-kitchen.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-by-category/automotive.md"
+    ],
+    "verdict": "FAIL",
+    "reason": "Incorrectly claims customer is still within the 7-day damage/defect reporting window despite 10 days having passed."
+  },
+  {
+    "id": "Q033",
+    "question": "Who sells the Voltaro VO-528 Smart TV, 32 inch, Full HD at the lowest price?",
+    "expected_answer": "Sun Boutique at 15,344 EGP (New, fulfilled by ZNSouq).",
+    "nice_to_have": "All offers: Prime House 16,814 EGP; Sun Boutique 15,344 EGP; Papyrus Shop 17,399 EGP",
+    "sources": [
+      "catalog/products.jsonl#ZNP-ELE-00003"
+    ],
+    "type": "product",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Sun Boutique (S0087) sells the Voltaro VO-528 Smart TV, 32 inch, Full HD at the lowest price of 15,344 EGP. This offer is fulfilled by ZNSouq (FBZ), there are 69 in stock, and it includes a 12-month store warranty. [1]\n\nFor comparison, Prime House offers it at 16,814 EGP and Papyrus Shop at 17,399 EGP.",
+    "retrieval_hit": true,
+    "search_query": "Voltaro VO-528 Smart TV 32 inch Full HD lowest price sellers price comparison",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-ELE-00003",
+      "catalog/products.jsonl#ZNP-ELE-00312",
+      "catalog/products.jsonl#ZNP-ELE-00128",
+      "catalog/products.jsonl#ZNP-ELE-00384",
+      "catalog/products.jsonl#ZNP-ELE-00167"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly identifies Sun Boutique at 15,344 EGP, New, fulfilled by ZNSouq, matching expected answer and passages."
+  },
+  {
+    "id": "Q034",
+    "question": "Who sells the Velora VE-180 Eau de Parfum, 100 ml, citrus and vetiver at the lowest price?",
+    "expected_answer": "Horus Cosmetics at 2,009 EGP (New, fulfilled by seller).",
+    "nice_to_have": "All offers: Luxor World 2,049 EGP; Horus Cosmetics 2,009 EGP; Urban Glow 2,179 EGP (out of stock)",
+    "sources": [
+      "catalog/products.jsonl#ZNP-BEA-00002"
+    ],
+    "type": "product",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Based on the available offers, **Horus Cosmetics (S0004)** sells the Velora VE-180 Eau de Parfum, 100 ml at the lowest price of **2,009 EGP** [1]. They have 2 in stock and ship it themselves.\n\nFor comparison, Luxor World offers it at 2,049 EGP (1 in stock, fulfilled by ZNSouq with a 6-month store warranty), and Urban Glow has it listed at 2,179 EGP but it's currently out of stock [1].",
+    "retrieval_hit": true,
+    "search_query": "Velora VE-180 Eau de Parfum 100 ml citrus vetiver lowest price sellers price comparison",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-BEA-00002",
+      "catalog/products.jsonl#ZNP-BEA-00223",
+      "catalog/products.jsonl#ZNP-BEA-00328",
+      "catalog/products.jsonl#ZNP-BEA-00302",
+      "catalog/products.jsonl#ZNP-BEA-00337"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly identifies Horus Cosmetics at 2,009 EGP and accurately lists other offers matching passage [1]."
+  },
+  {
+    "id": "Q035",
+    "question": "Who sells the Corex CO-952 External SSD, 1 TB at the lowest price?",
+    "expected_answer": "Nile Bazaar at 1,959 EGP (New, fulfilled by seller).",
+    "nice_to_have": "All offers: Delta Computers 2,144 EGP; Nile Bazaar 1,959 EGP; Lotus Bazaar 2,189 EGP (out of stock)",
+    "sources": [
+      "catalog/products.jsonl#ZNP-COM-00001"
+    ],
+    "type": "product",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Based on the product listing, **Nile Bazaar** sells the Corex CO-952 External SSD, 1 TB at the lowest price of **1,959 EGP** [2]. They have 169 in stock and ship it themselves with a 6-month store warranty.\n\nFor comparison, Delta Computers offers it for 2,144 EGP (fulfilled by ZNSouq with a 12-month store warranty and 33 in stock), and Lotus Bazaar has it listed for 2,189 EGP but it's currently out of stock [2].",
+    "retrieval_hit": true,
+    "search_query": "Corex CO-952 External SSD 1TB lowest price sellers",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-COM-00129",
+      "catalog/products.jsonl#ZNP-COM-00001",
+      "catalog/products.jsonl#ZNP-COM-00373",
+      "catalog/products.jsonl#ZNP-COM-00069",
+      "catalog/products.jsonl#ZNP-COM-00020"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly identifies Nile Bazaar at 1,959 EGP, matching passage details without contradictions."
+  },
+  {
+    "id": "Q036",
+    "question": "What's in the box with the Voltaro VO-528 Smart TV, 32 inch, Full HD, and is the wall bracket included?",
+    "expected_answer": "In the box: TV, remote control, stand, power cable. The wall bracket is not included.",
+    "nice_to_have": "",
+    "sources": [
+      "catalog/products.jsonl#ZNP-ELE-00003"
+    ],
+    "type": "product",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "The Voltaro VO-528 Smart TV comes with a TV, remote control, stand, and power cable [3]. The wall bracket is **not included** — the TV is wall mount (VESA) compatible, but you'd need to buy a bracket separately if you want to wall mount it [3].",
+    "retrieval_hit": true,
+    "search_query": "Voltaro VO-528 Smart TV 32 inch Full HD what's in the box contents included wall bracket",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-ELE-00312",
+      "catalog/products.jsonl#ZNP-ELE-00128",
+      "catalog/products.jsonl#ZNP-ELE-00003",
+      "catalog/products.jsonl#ZNP-ELE-00358",
+      "catalog/products.jsonl#ZNP-ELE-00167"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly lists box contents (TV, remote, stand, power cable) and states wall bracket not included, matching passage [3]."
+  },
+  {
+    "id": "Q037",
+    "question": "Does the Breezo BR-589 Split Air Conditioner, 3 HP, cool only include installation?",
+    "expected_answer": "No. Installation is not included; book an authorized technician (approx. 1,200-1,800 EGP).",
+    "nice_to_have": "",
+    "sources": [
+      "catalog/products.jsonl#ZNP-APL-00001"
+    ],
+    "type": "product",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "No, the Breezo BR-589 Split Air Conditioner does not include installation. Installation is not included; you'll need to book an authorized technician separately, which costs approximately 1,200-1,800 EGP. [2]",
+    "retrieval_hit": true,
+    "search_query": "Breezo BR-589 Split Air Conditioner 3 HP cool only installation included what's in the box",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-APL-00185",
+      "catalog/products.jsonl#ZNP-APL-00001",
+      "catalog/products.jsonl#ZNP-APL-00208",
+      "catalog/products.jsonl#ZNP-APL-00094",
+      "catalog/products.jsonl#ZNP-APL-00200"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states installation not included and gives technician cost range matching passage [2]."
+  },
+  {
+    "id": "Q038",
+    "question": "What do customers say about the Zentro ZE-220 Smart Watch, Rose Gold, 41 mm?",
+    "expected_answer": "Summary of 15 reviews, average 3.5 stars. Should mention common positives and negatives and not invent reviews.",
+    "nice_to_have": "",
+    "sources": [
+      "catalog/reviews.jsonl#ZNP-ELE-00004"
+    ],
+    "type": "reviews",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "Based on customer reviews, the Zentro ZE-220 Smart Watch has an average rating of 3.5 out of 5 from 15 reviews [1][2].\n\n**What customers liked:**\nMany praised the build quality as premium and appreciated the quick setup (under five minutes). Several confirmed the watch works smoothly with their phones, receives notifications from Android and iOS, and delivers good value for the price. Customers also highlighted the 5 ATM water resistance for swimming and GPS functionality for running and cycling. A few mentioned it arrived well packed and on time, and made a good gift [1][2].\n\n**Common complaints:**\nThe confusing app was the most frequent complaint, mentioned across several reviews. Some customers also reported the device stopped working properly after a few weeks, and one customer felt it was overpriced and received a used item instead of a new one [2].\n\n**Mixed opinions:**\nGPS performance has conflicting feedback—one customer confirmed it works great for running and cycling, while another disputed this, saying the listing's GPS claim didn't match their experience. Build quality also divided opinions: some found it premium, while others felt it was cheap and plasticky [1][2].\n\nOverall, customers appreciate the design and initial performance, but durability and the app interface are concerns worth considering.",
+    "retrieval_hit": true,
+    "search_query": "Zentro ZE-220 Smart Watch Rose Gold 41 mm customer reviews ratings feedback",
+    "routes": [
+      "reviews"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/reviews.jsonl#ZNP-ELE-00004",
+      "catalog/reviews.jsonl#ZNP-ELE-00004"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 3.5/15 reviews, summarizes real positives/negatives/mixed points from passages without inventing anything."
+  },
+  {
+    "id": "Q039",
+    "question": "What do customers say about the Voltaro VO-688 Instant Camera, Black?",
+    "expected_answer": "Summary of 25 reviews, average 4.5 stars. Should mention common positives and negatives and not invent reviews.",
+    "nice_to_have": "",
+    "sources": [
+      "catalog/reviews.jsonl#ZNP-ELE-00005"
+    ],
+    "type": "reviews",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "Customers rate the Voltaro VO-688 Instant Camera, Black at 4.5 out of 5 from 25 reviews [1][2][3].\n\n**What customers like:**\n- Quick setup (less than five minutes) and easy to use [1][2][3]\n- Prints credit-card-size photos in about 90 seconds as described [1][2][3]\n- Good build quality and great value for the price [1][2][3]\n- Works smoothly with a phone [2][3]\n- Runs on 2 AA batteries (included) [2][3]\n- Has automatic exposure and built-in flash [1][3]\n- Arrives well packed and on time [1][3]\n- Popular as a gift [1][2][3]\n\n**What customers mention as issues:**\n- Some say it feels cheap and plasticky despite premium build quality [1][2][3]\n- A few report it stopped working properly after a few weeks [1][2][3]\n- One customer found the app confusing [3]\n\nOverall, most customers say it's worth buying and works as described, though a small number experienced durability problems [1][2][3].",
+    "retrieval_hit": true,
+    "search_query": "Voltaro VO-688 Instant Camera Black customer reviews feedback ratings",
+    "routes": [
+      "reviews"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/reviews.jsonl#ZNP-ELE-00005",
+      "catalog/reviews.jsonl#ZNP-ELE-00005",
+      "catalog/reviews.jsonl#ZNP-ELE-00005"
+    ],
+    "verdict": "PASS",
+    "reason": "Correctly states 4.5/25 reviews, lists positives and negatives accurately supported by passages, no invented content."
+  },
+  {
+    "id": "Q040",
+    "question": "Where is my order ZN-48213377?",
+    "expected_answer": "It couldn't find order ZN-48213377 on the customer's account; it asks them to check the order number (or contact customer service) and does not invent any order status.",
+    "nice_to_have": "",
+    "sources": [],
+    "type": "needs_tool",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "I couldn't find order ZN-48213377 on your account. This could happen if the order number was entered incorrectly or if it belongs to a different account.\n\nCould you double-check the order number? It should be in the format ZN-XXXXXXXX and would have been sent to you in your order confirmation email and SMS [2].\n\nIf you're still having trouble, you can contact customer service and they'll be able to help you locate your order [2]:\n- **Phone**: 00001 (demo number), 9:00 AM - 11:00 PM Cairo time\n- **Email**: help@znsouq.example (reply within 24 hours)\n- **Live chat**: in the ZNSouq app and website, 24/7\n\nMake sure you have your order number ready when you reach out.",
+    "retrieval_hit": null,
+    "search_query": "order status tracking ZN-48213377 where is my order",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [
+      {
+        "tool": "lookup_order",
+        "input": {
+          "order_id": "ZN-48213377"
+        },
+        "output": {
+          "found": false,
+          "message": "No order ZN-48213377 was found on this customer's account."
+        }
+      }
+    ],
+    "retrieved": [
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/contact-customer-service.md",
+      "platform/buyer/placing-an-order.md",
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/znsouq-guarantee.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States order not found, asks to check order number or contact customer service, no invented status."
+  },
+  {
+    "id": "Q041",
+    "question": "Do you sell PlayStation 5 consoles?",
+    "expected_answer": "Says it couldn't find PlayStation 5 consoles in ZNSouq's catalog, without inventing products, prices or sellers.",
+    "nice_to_have": "Suggests searching the site or contacting customer service.",
+    "sources": [],
+    "type": "unanswerable",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "mode": "buyer",
+    "bot_answer": "I couldn't find PlayStation 5 consoles in the passages I have access to. To check if ZNSouq currently stocks them or to search our full catalog, please contact our customer service team at 00001 (demo number) or help@znsouq.example. They'll be happy to help you find what you're looking for.",
+    "retrieval_hit": null,
+    "search_query": "PlayStation 5 console buy available sellers stock",
+    "routes": [
+      "products"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "catalog/products.jsonl#ZNP-SPO-00266",
+      "catalog/products.jsonl#ZNP-SPO-00010",
+      "catalog/products.jsonl#ZNP-SPO-00112",
+      "catalog/products.jsonl#ZNP-TOY-00157",
+      "catalog/products.jsonl#ZNP-SPO-00056"
+    ],
+    "verdict": "PASS",
+    "reason": "States PS5 not found in catalog, no invented products/prices, and offers valid customer service contact as optional extra."
+  },
+  {
+    "id": "Q042",
+    "question": "What is the capital of France?",
+    "expected_answer": "Out of scope: politely say it can only help with ZNSouq shopping and selling questions.",
+    "nice_to_have": "",
+    "sources": [],
+    "type": "out_of_scope",
+    "audience": "buyer",
+    "difficulty": "easy",
+    "mode": "buyer",
+    "bot_answer": "I'm the ZNSouq support assistant, so I can only help with questions about buying on ZNSouq, our delivery zones, orders, and platform policies. That question is outside my area!\n\nIs there anything I can help you with about ZNSouq? For example, I can answer questions about delivery times, fees, returns, or help you look up an order.",
+    "retrieval_hit": null,
+    "search_query": "What is the capital of France?",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/delivery-by-governorate/monufia.md",
+      "platform/buyer/delivery-by-governorate/suez.md",
+      "platform/buyer/about-znsouq.md",
+      "platform/buyer/delivery-by-governorate/beni-suef.md"
+    ],
+    "verdict": "PASS",
+    "reason": "It politely declines and redirects to ZNSouq shopping/selling topics, matching the expected out-of-scope response."
+  },
+  {
+    "id": "Q043",
+    "question": "Can I pay with Bitcoin?",
+    "expected_answer": "Not supported: payment methods are cards (Visa/Mastercard), Meeza, ZNSouq Wallet, cash on delivery, installments via ZNPay, and gift cards.",
+    "nice_to_have": "",
+    "sources": [
+      "platform/buyer/payment-methods.md"
+    ],
+    "type": "unanswerable",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "Bitcoin isn't listed among the payment methods ZNSouq accepts [2]. The platform accepts credit and debit cards (Visa and Mastercard), Meeza cards, ZNSouq Wallet balance, cash on delivery, installments through ZNPay, and gift cards.\n\nIf you'd like to confirm whether Bitcoin or other payment methods are available, I'd recommend contacting our customer service team at 00001 or help@znsouq.example.",
+    "retrieval_hit": true,
+    "search_query": "can I pay with Bitcoin payment methods accepted",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/payment-methods.md",
+      "platform/buyer/payment-methods.md",
+      "platform/buyer/znsouq-wallet.md",
+      "platform/buyer/znsouq-guarantee.md",
+      "platform/buyer/installments.md",
+      "platform/buyer/account-security-and-scams.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States Bitcoin not supported and lists all required accepted methods correctly, matching the passages."
+  },
+  {
+    "id": "Q044",
+    "question": "I returned a dress because I changed my mind. Will I get the delivery fee back?",
+    "expected_answer": "No. The delivery fee is only refunded if the item was defective, damaged, wrong, or never delivered; for a change-of-mind return it is not refunded.",
+    "nice_to_have": "For change-of-mind returns of FBZ items, 25 EGP return shipping is also deducted (not for Plus members).",
+    "sources": [
+      "platform/buyer/refunds.md"
+    ],
+    "type": "regression",
+    "audience": "buyer",
+    "difficulty": "medium",
+    "mode": "buyer",
+    "bot_answer": "No, the delivery fee won't be refunded for a change-of-mind return. [3] The delivery fee is only refunded if the item was defective, damaged, wrong, or never delivered.\n\nHowever, there is a return shipping cost: 25 EGP will be deducted from your refund if the dress is Fulfilled by ZNSouq. [2] This deduction is free (waived) if you're a Plus member. [2]\n\nAlso, for your change-of-mind return to be accepted, the dress must be unworn, unwashed, and have its original tags attached. [5]",
+    "retrieval_hit": true,
+    "search_query": "return dress changed mind delivery fee refund",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [],
+    "retrieved": [
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/returns-policy.md",
+      "platform/buyer/refunds.md",
+      "platform/buyer/damaged-defective-wrong-items.md",
+      "platform/buyer/returns-by-category/fashion-women.md"
+    ],
+    "verdict": "PASS",
+    "reason": "States no delivery fee refund for change-of-mind, with correct condition, and adds supported optional details."
+  },
+  {
+    "id": "Q045",
+    "question": "Hi, where is my order ZN-98380209? It still hasn't arrived.",
+    "expected_answer": "Order ZN-98380209 is delayed: it has not been delivered and the estimated delivery was 2026-09-22 to 2026-09-24.",
+    "nice_to_have": "The item is a PureLeaf PU-979 Hair Dryer, 2200 W, Pink. Since it is past the latest estimated delivery date, the customer can file a ZNSouq Guarantee claim 3 days after that date (after contacting the seller).",
+    "sources": [],
+    "type": "needs_tool",
+    "audience": "buyer",
+    "difficulty": "hard",
+    "customer_id": "C-35396",
+    "mode": "buyer",
+    "bot_answer": "I can see your order ZN-98380209 is delayed. Here's what's happening:\n\n**Order Status**: Delayed (it hasn't been delivered yet)\n- **Item**: PureLeaf PU-979 Hair Dryer, 2200 W, Pink\n- **Ordered**: 20 September 2026\n- **Estimated delivery date**: 22-24 September 2026\n- **Delivery location**: Damietta\n\nSince your order is now significantly overdue (the latest estimated date was 24 September and today is 7 November), you have options:\n\n1. First, contact customer service (this is an FBZ order) through **Orders > Contact seller** in your account and allow 2 business days for a reply [1].\n\n2. If it still hasn't arrived 3 days after the latest estimated delivery date (which it clearly has), you can file a **ZNSouq Guarantee claim** for \"item not received\" [1][3].\n\nFor immediate help, you can also reach customer service directly:\n- **Phone**: 00001 (demo number), 9:00 AM - 11:00 PM Cairo time, every day\n- **Email**: help@znsouq.example (reply within 24 hours)\n- **Live chat**: in the ZNSouq app or website, 24/7\n\nHave your order number ZN-98380209 ready when you contact them.",
+    "retrieval_hit": null,
+    "search_query": "order ZN-98380209 tracking status delivery where is my order",
+    "routes": [
+      "policies"
+    ],
+    "tool_calls": [
+      {
+        "tool": "lookup_order",
+        "input": {
+          "order_id": "ZN-98380209"
+        },
+        "output": {
+          "found": true,
+          "order_id": "ZN-98380209",
+          "placed_on": "2026-09-20",
+          "status": "delayed",
+          "estimated_delivery": "2026-09-22 to 2026-09-24",
+          "delivered_on": null,
+          "late": true,
+          "delivery_governorate": "Damietta",
+          "payment_method": "card",
+          "items": [
+            {
+              "title": "PureLeaf PU-979 Hair Dryer, 2200 W, Pink",
+              "qty": 1,
+              "unit_price_egp": 1339,
+              "sold_by": "Oasis Hub",
+              "fulfilled_by": "ZNSouq (FBZ)"
+            }
+          ]
+        }
+      }
+    ],
+    "retrieved": [
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/tracking-your-order.md",
+      "platform/buyer/znsouq-guarantee.md",
+      "platform/buyer/contact-customer-service.md",
+      "platform/buyer/placing-an-order.md",
+      "platform/buyer/free-shipping.md"
+    ],
+    "verdict": "PASS",
+    "reason": "Includes all required facts (delayed, not delivered, estimated 2026-09-22 to 2026-09-24) with no contradictions."
+  }
+]
