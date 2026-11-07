@@ -18,4 +18,4 @@ Go to Orders and select the order to see the status of each shipment:
 The courier makes up to 3 delivery attempts on 3 different business days. After 3 failed attempts the item is returned to the seller or warehouse and prepaid orders are fully refunded, including the delivery fee. Repeated refused cash-on-delivery orders may lead to cash on delivery being disabled on your account.
 
 ## My order is late
-If your order has not arrived by the latest estimated delivery date, wait 1 extra business day, then contact the seller (for seller-fulfilled orders) or customer service (for FBZ orders). If it still hasn't arrived 3 days after the latest estimated delivery date, you can file a ZNSouq Guarantee claim.
+If your order has not arrived by the latest estimated delivery date, contact the seller (for seller-fulfilled orders) or customer service (for FBZ orders) through Orders > Contact seller, and allow 2 business days for a reply. If it still hasn't arrived 3 days after the latest estimated delivery date, you can file a ZNSouq Guarantee claim (see "ZNSouq Guarantee").

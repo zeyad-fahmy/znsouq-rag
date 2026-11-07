@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from rag.loader import DATA_DIR
 from rag.retrieve import retrieve
 from rag.catalog import hybrid_search, reviews_for
+from rag.orders import ORDER_TOOL, lookup_order
 
 load_dotenv()
 MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
@@ -69,7 +70,7 @@ def rewrite_query(question: str, mode: str = "buyer", history=None):
         messages=[{"role": "user", "content": REWRITE_PROMPT.format(
             audience="buyer" if mode == "buyer" else "seller", history=hist, question=question)}],
     )
-    text = msg.content[0].text.strip()
+    text = "".join(b.text for b in msg.content if b.type == "text").strip()
     try:
         data = json.loads(re.search(r"\{.*\}", text, re.DOTALL).group(0))
         query = str(data.get("query") or question)
@@ -140,7 +141,8 @@ Rules:
 6. If passages describe different steps or waiting times, explain them in order ("first..., then...") instead of picking one.
 7. Product passages list every seller's offer: when asked about price or sellers, compare all offers and mention stock and condition. Review passages are customer opinions: summarize the common points (good and bad) with the average rating and number of reviews, never present one opinion as a fact, and never invent reviews. If a product isn't in the passages, say you couldn't find it.
 8. Cite the passages you used like [1] or [2][3] right after the relevant sentence.
-9. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
+9. Orders: if the customer asks about a specific order, call the lookup_order tool with the order number (format ZN-12345678). If they didn't give an order number, ask for it. Report only what the tool returns and never guess an order's status. If the order is late, add what the passages say they can do (for example a ZNSouq Guarantee claim).
+10. Style: write like a friendly support agent in a chat. Give a complete but compact answer: include every condition, fee, limit or exception from the passages that changes the answer, and skip unrelated details. Use plain prose; use a short list only for 3 or more steps or options. No headings. No emojis. Use EGP for money."""
 
 CONTACT = {"buyer": "00001 (demo number) or help@znsouq.example",
            "seller": "00002 (demo number) or sellers@znsouq.example"}
@@ -155,7 +157,7 @@ def format_context(hits):
 
 
 # ---------- 5. Ask Claude ----------
-def answer(question: str, mode: str = "buyer", k: int = 4, history=None):
+def answer(question: str, mode: str = "buyer", k: int = 4, history=None, customer_id=None):
     hits, seller_id, search_query, sources = gather_context(question, mode, k, history)
     system = SYSTEM.format(audience="buyers" if mode == "buyer" else "sellers",
                            today=date.today().isoformat(), contact=CONTACT[mode])
@@ -167,14 +169,30 @@ def answer(question: str, mode: str = "buyer", k: int = 4, history=None):
                  f"Latest question: {question}\n(Standalone version: {search_query})")
     else:
         user += f"Question: {question}"
-    response = client().messages.create(
-        model=MODEL,
-        max_tokens=3000,
-        thinking={"type": "enabled", "budget_tokens": 1500},   # private reasoning before answering
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    )
-    # With thinking on, the reply has a "thinking" block first and the answer in a "text" block
+
+    messages = [{"role": "user", "content": user}]
+    tools = [ORDER_TOOL] if mode == "buyer" else []      # only buyers have orders
+    tool_calls = []
+    for _ in range(3):                                   # at most 3 rounds of tool use
+        request = dict(model=MODEL, max_tokens=3000, system=system, messages=messages,
+                       thinking={"type": "enabled", "budget_tokens": 1500})   # private reasoning
+        if tools:
+            request["tools"] = tools
+        response = client().messages.create(**request)
+        if response.stop_reason != "tool_use":
+            break                                        # Claude has its final answer
+        # Claude asked to use a tool: run it, then send the result back in a new message
+        messages.append({"role": "assistant", "content": response.content})
+        results = []
+        for block in response.content:
+            if block.type == "tool_use" and block.name == "lookup_order":
+                output = lookup_order(block.input.get("order_id", ""), customer_id)
+                tool_calls.append({"tool": block.name, "input": block.input, "output": output})
+                results.append({"type": "tool_result", "tool_use_id": block.id, "content": json.dumps(output)})
+        messages.append({"role": "user", "content": results})
+
+    # With thinking on, the reply has "thinking" blocks first and the answer in "text" blocks
     text = "".join(b.text for b in response.content if b.type == "text")
-    return {"answer": text, "sources": hits,
-            "seller_id": seller_id, "search_query": search_query, "routes": sources}
+    return {"answer": text or "Sorry, I couldn't complete that request. Please try again.",
+            "sources": hits, "seller_id": seller_id, "search_query": search_query,
+            "routes": sources, "tool_calls": tool_calls}

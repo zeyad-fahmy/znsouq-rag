@@ -10,11 +10,13 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
 import anthropic
 
-from rag.answer import MODEL, answer
+from datetime import date
+
+from rag.answer import CONTACT, MODEL, answer, format_context
 from rag.loader import DATA_DIR
 
-# Order status needs live data (order-lookup tool, step 4); everything else can be answered now
-SKIP_TYPES = {"needs_tool"}
+# Nothing is skipped any more: order questions use the lookup_order tool
+SKIP_TYPES = set()
 
 JUDGE_PROMPT = """You are grading a customer-support chatbot for a fictional marketplace.
 
@@ -24,26 +26,37 @@ Expected answer (must include these facts): {expected}
 
 Optional extra details (NOT required; never FAIL an answer for leaving these out): {nice}
 
+What the chatbot was given (its only allowed knowledge):
+- From its instructions: today's date is {today}; customer service contact is {contact}.
+- Passages and tool results:
+<passages>
+{passages}
+</passages>
+
 Chatbot answer: {answer}
 
 Grade the chatbot answer:
-- PASS if it gives the must-include facts correctly and states nothing that contradicts the expected answer or the optional details.
-- FAIL if a must-include fact is missing or wrong, or it states something false.
-Extra correct detail is fine. Wording does not matter.
+- PASS if it gives the must-include facts correctly and states nothing that contradicts the expected answer, the optional details or the passages.
+- FAIL if a must-include fact is missing or wrong, or it states something that is not supported by the passages (invented).
+Extra details are fine when the passages support them. Judge ONLY by the expected answer and the passages: do not use your own knowledge of how marketplaces usually work. Wording does not matter.
 
-Reply with JSON only: {{"verdict": "PASS" or "FAIL", "reason": "<one short sentence>"}}"""
+Reply with JSON only, no code fences: {{"verdict": "PASS" or "FAIL", "reason": "<one sentence, at most 25 words>"}}"""
 
 client = anthropic.Anthropic()
+# The grader can be a different (stronger) model than the bot. Set JUDGE_MODEL in .env; defaults to the bot's model.
+JUDGE_MODEL = os.getenv("JUDGE_MODEL", MODEL)
 
 
-def judge(question, expected, bot_answer, nice=""):
+def judge(question, expected, bot_answer, nice="", passages="", mode="buyer"):
     msg = client.messages.create(
-        model=MODEL,
-        max_tokens=200,
+        model=JUDGE_MODEL,
+        max_tokens=3000,
         messages=[{"role": "user", "content": JUDGE_PROMPT.format(
-            question=question, expected=expected, nice=nice or "(none)", answer=bot_answer)}],
+            question=question, expected=expected, nice=nice or "(none)",
+            passages=passages[:12000] or "(none)", today=date.today().isoformat(),
+            contact=CONTACT[mode], answer=bot_answer)}],
     )
-    text = msg.content[0].text
+    text = "".join(b.text for b in msg.content if b.type == "text")   # skip thinking blocks
     match = re.search(r"\{.*\}", text, re.DOTALL)        # find the JSON even if extra text appears
     try:
         return json.loads(match.group(0))
@@ -62,14 +75,19 @@ def retrieval_hit(expected_sources, hits):
 def main():
     questions = [json.loads(line) for line in (DATA_DIR / "eval" / "questions.jsonl").open(encoding="utf-8")]
     questions = [q for q in questions if q["type"] not in SKIP_TYPES]
+    print(f"Bot model: {MODEL}  |  Judge model: {JUDGE_MODEL}\n")
     results = []
     for q in questions:
         mode = "seller" if q["audience"] == "seller" else "buyer"
-        r = answer(q["question"], mode=mode)
-        grade = judge(q["question"], q["expected_answer"], r["answer"], q.get("nice_to_have", ""))
+        r = answer(q["question"], mode=mode, customer_id=q.get("customer_id"))   # eval "logs in" as that customer
+        passages = format_context(r["sources"])
+        if r.get("tool_calls"):                          # tool results are allowed knowledge too
+            passages += "\n\nTool results:\n" + "\n".join(json.dumps(t["output"]) for t in r["tool_calls"])
+        grade = judge(q["question"], q["expected_answer"], r["answer"], q.get("nice_to_have", ""), passages, mode)
         hit = retrieval_hit(q["sources"], r["sources"])
         results.append({**q, "mode": mode, "bot_answer": r["answer"], "retrieval_hit": hit,
                         "search_query": r.get("search_query"), "routes": r.get("routes"),
+                        "tool_calls": r.get("tool_calls"),
                         "retrieved": [h["metadata"]["source"] for h in r["sources"]], **grade})
         mark = "✅" if grade["verdict"] == "PASS" else "❌"
         print(f"{mark} {q['id']} [{q['type']}] {q['question'][:70]}")
