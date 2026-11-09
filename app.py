@@ -1,12 +1,33 @@
 """ZNSouq support chat — run with:  streamlit run app.py"""
 import os
-os.environ.setdefault("HF_HUB_OFFLINE", "1")   # use the cached embedding model
 
 import streamlit as st
+
+# On Streamlit Community Cloud the API key lives in the app's "Secrets", not in a .env file.
+# Copy those secrets into environment variables so the rest of the code works unchanged.
+try:
+    for key, value in st.secrets.items():
+        if isinstance(value, str):
+            os.environ.setdefault(key, value)
+except Exception:
+    pass  # running locally without a secrets file: .env is used instead
+
 from rag.answer import answer
 from rag.orders import demo_customers
+from rag.prebuilt import ensure_indexes
+
+MAX_QUESTIONS = 20   # per visitor session: protects your API credits on a public app
 
 st.set_page_config(page_title="ZNSouq Support", page_icon="🛒")
+
+
+@st.cache_resource(show_spinner="Preparing the knowledge base (first start only, about a minute)...")
+def prepare():
+    ensure_indexes()   # fills Chroma from data/embeddings/*.npz if it's empty
+    return True
+
+
+prepare()
 
 # ---------- Sidebar: settings ----------
 with st.sidebar:
@@ -66,7 +87,13 @@ for msg in st.session_state.messages:
             render_sources(msg["sources"], msg.get("search_query"), msg.get("tool_calls"))
 
 # ---------- New question ----------
-if question := st.chat_input("Ask a question about ZNSouq..."):
+if "asked" not in st.session_state:
+    st.session_state.asked = 0
+
+if st.session_state.asked >= MAX_QUESTIONS:
+    st.warning(f"This demo allows {MAX_QUESTIONS} questions per visit. Refresh the page to start a new session.")
+elif question := st.chat_input("Ask a question about ZNSouq..."):
+    st.session_state.asked += 1
     # The last few messages BEFORE this question = the conversation memory
     history = [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages[-6:]]
     st.session_state.messages.append({"role": "user", "content": question})

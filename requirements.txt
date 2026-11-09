@@ -1,7 +1,11 @@
+# CPU-only PyTorch (much smaller and faster to install than the default GPU build)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
 anthropic
 chromadb
 sentence-transformers
 python-dotenv
 streamlit
-ipykernel
 rank-bm25
+numpy
