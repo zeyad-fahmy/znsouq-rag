@@ -59,6 +59,14 @@ with st.sidebar:
         st.caption(f"• {ex}")
 
 
+# Switching Buyer/Seller mode or the demo customer starts a NEW conversation,
+# so memory from one context (e.g. a buyer's order) doesn't leak into another.
+chat_context = (mode, customer_id)
+if st.session_state.get("chat_context") != chat_context:
+    st.session_state.messages = []
+    st.session_state.chat_context = chat_context
+
+
 def render_sources(sources, search_query=None, tool_calls=None):
     with st.expander(f"Sources ({len(sources)})"):
         if search_query:
